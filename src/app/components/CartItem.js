@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import product1 from "@/assets/gallery/gallery1.png";
+import product1 from "@/assets/gallery/gallery2.png";
 
 const CartItem = () => {
   const [count, setCount] = useState(0);
