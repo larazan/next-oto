@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import Accordion from "./Accordion";
 
-import logo from "@/assets/img/logo.svg";
+import logo from "@/assets/img/autocar_logo.svg";
 
 const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
   let autoRef = useRef();
@@ -29,10 +29,10 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
       <div
         className={`${
           openMenu ? "left-0" : "-left-full"
-        } flex flex-col w-full bg-[#f4ded9]  overflow-y-auto fixed top-0 h-full shadow-2xl md:w-[35vw] transition-all duration-300 z-50 px-4 lg:px-[35px]`}
+        } flex flex-col w-full bg-[#f5f5f5]  overflow-y-auto fixed top-0 h-full shadow-2xl md:w-[35vw] transition-all duration-300 z-50 px-4 lg:px-[35px]`}
         ref={autoRef}
       >
-        <div className="flex w-full items-center justify-between py-4 border-b border-gray-900">
+        <div className="flex w-full items-center justify-between py-4 border-b2 border-gray-900">
           <div className="w-1/2">
             <Link href={"/"}>
               <Image src={logo} alt="" className="w-28 md:w-24" />
@@ -68,7 +68,7 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
               href={"/blogs"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
             >
-              <span className="text-sm">Beauty</span>
+              <span className="text-sm">Motorcycle</span>
             </Link>
           </div>
           <div className={` py-0 flex flex-col w-full `}>
@@ -76,81 +76,91 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
               href={"/blogs"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
             >
-              <span className="text-sm">Style</span>
+              <span className="text-sm">Guide & Advice</span>
             </Link>
           </div>
-          <div className={` py-0 flex flex-col w-full `}>
-            <Link
-              href={"/blogs"}
-              className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
-            >
-              <span className="text-sm">Health</span>
-            </Link>
-          </div>
-          <div className={` py-0 flex flex-col w-full `}>
-            <Link
-              href={"/blogs"}
-              className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
-            >
-              <span className="text-sm">Entertainment</span>
-            </Link>
-          </div>
-          <div className={` py-0 flex flex-col w-full `}>
-            <Link
-              href={"/blogs"}
-              className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
-            >
-              <span className="text-sm">Relationship</span>
-            </Link>
-          </div>
-          <div className={` py-0 flex flex-col w-full `}>
-            <Link
-              href={"/blogs"}
-              className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
-            >
-              <span className="text-sm">Food</span>
-            </Link>
-          </div>
-          <div className={` py-0 flex flex-col w-full `}>
-            <Link
-              href={"/blogs"}
-              className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
-            >
-              <span className="text-sm">Travel</span>
-            </Link>
-          </div>
-          <Accordion title="Gifts" bg="f4ded9">
+          
+          <Accordion title="News" bg="f5f5f5">
             <div className="overflow-hidden pb-0">
               <div className="duration-300 px-4">
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
                   href={"/plants"}
                 >
-                  Recipients
+                  Industry News
                 </Link>
                 <a
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
                   href="#"
                 >
-                  Occasions
+                  Auto Show
                 </a>
                 <a
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
                   href="#"
                 >
-                  Interests
+                  Future Cars
                 </a>
                 <a
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
                   href="#"
                 >
-                  Popular
+                  Sports Cars
+                </a>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  Green Cars
+                </a>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  Truck
+                </a>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  Technology
                 </a>
               </div>
             </div>
           </Accordion>
 
-          <Accordion title="Shops" bg="f4ded9">
+          <Accordion title="Racing" bg="f5f5f5">
+            <div className="overflow-hidden pb-0">
+              <div className="duration-300 px-4">
+                <Link
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href={"/plants"}
+                >
+                  Formula 1
+                </Link>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  MotoGP
+                </a>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  NASCAR
+                </a>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  Formula E
+                </a>
+              </div>
+            </div>
+          </Accordion>
+
+          <Accordion title="Shops" bg="f5f5f5">
             <div className="overflow-hidden pb-0">
               <div className="duration-300 px-4">
                 <Link
@@ -198,6 +208,14 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
               href={"/blogs"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
             >
+              <span className="text-sm">Podcast</span>
+            </Link>
+          </div>
+          <div className={` py-0 flex flex-col w-full `}>
+            <Link
+              href={"/blogs"}
+              className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
+            >
               <span className="text-sm">Reviews</span>
             </Link>
           </div>
@@ -206,7 +224,7 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
               href={"/blogs"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
             >
-              <span className="text-sm">News</span>
+              <span className="text-sm">Shop</span>
             </Link>
           </div>
         </div>

@@ -8,6 +8,8 @@ import GoTop from './components/GoTop';
 import SubscribeForm from './components/SubscribeForm';
 import NewsFeed from './components/NewsFeed';
 import CookieConsent from './components/CookieConsent';
+import Hero from './components/Hero';
+import ArticleHome from './components/ArticleHome';
 
 export default function Home() {
   return (
@@ -22,7 +24,8 @@ export default function Home() {
     <GoTop />
     <CookieConsent />
     <NewsFeed />
-
+    <Hero />
+    <ArticleHome />
     <SubscribeForm />
     <Footer />
     </>

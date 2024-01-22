@@ -36,7 +36,19 @@ const Header = () => {
           <div className="flex justify-between w-full md:w-[100px]">
             <section className="w-2/6">
               <button className=" h-8 w-8 md:hidden2" onClick={clickMenu}>
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  ></path>
+                </svg>
               </button>
               <div
                 className={` ${
@@ -66,7 +78,6 @@ const Header = () => {
                 </aside>
                 <div className="opacity-50 fixed inset-0 z-30 bg-black"></div>
               </div>
-              
             </section>
             <div className="w-2/6 md:w-full flex md:hidden justify-center items-center">
               <Link href={"/"}>
@@ -178,46 +189,31 @@ const Header = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="hidden md:flex">
-        <Logo />
+        <Link href={"/"}>
+          <Logo />
+          </Link>
         </div>
 
         <div className="w-1/5 hidden md:flex justify-end">
           <div className="flex space-x-2 items-center">
-          <div
-                id="search-toggle"
-                className="flex items-center cursor-pointer"
-                onClick={handleClick}
+            <Link
+              href={"/search"}
+              id="search-toggle"
+              className="flex items-center cursor-pointer"
+            >
+              <svg
+                className="fill-current text-gray-700 w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
               >
-                {show ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-[#1d494e]"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                ) : (
-                  <svg
-                    className="fill-current text-gray-700 w-5 h-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      className="heroicon-ui"
-                      d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
-                    />
-                  </svg>
-                )}
-              </div>
+                <path
+                  className="heroicon-ui"
+                  d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+                />
+              </svg>
+            </Link>
             <button
               className="relative flex w-8 h-7"
               onClick={() => setIsOpen(!isOpen)}

@@ -4,17 +4,15 @@ import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import news1 from "@/assets/news/news1.png";
-import news4 from "@/assets/news/news4.png";
-import news5 from "@/assets/news/news5.png";
-import news6 from "@/assets/news/news6.png";
-import news7 from "@/assets/news/news7.png";
-import news8 from "@/assets/news/news8.png";
-import news9 from "@/assets/news/news9.png";
-import news10 from "@/assets/news/news10.png";
-import news11 from "@/assets/news/news11.png";
-import news12 from "@/assets/news/news12.png";
-import news13 from "@/assets/news/news13.png";
+import blog1 from "@/assets/blogs/blog1.png";
+import blog4 from "@/assets/blogs/blog4.png";
+import blog5 from "@/assets/blogs/blog5.png";
+import blog6 from "@/assets/blogs/blog6.png";
+import blog7 from "@/assets/blogs/blog7.png";
+import blog8 from "@/assets/blogs/blog8.png";
+import blog9 from "@/assets/blogs/blog9.png";
+import blog10 from "@/assets/blogs/blog10.png";
+
 
 const RelatedArticle = () => {
   let scrl = useRef(null);
@@ -49,68 +47,50 @@ const RelatedArticle = () => {
   };
 
   const newsData = [
-    // {
-    //   title:
-    //     "Anine Bing on Her Work Uniform and the Book Every Creative Needs to Read",
-    //   category: "Doing the work",
-    //   img: news1,
-    // },
-    // {
-    //   title:
-    //     "Every Time Pamela Anderson Has Gone Makeup-Free: See All Her All-Natural Looks",
-    //   category: "Celebrity Beauty",
-    //   img: news4,
-    // },
-    // {
-    //   title:
-    //     "The Benefits of Walking Are Greater If You Do This One Simple Thing",
-    //   category: "Doing the work",
-    //   img: news5,
-    // },
-    // {
-    //   title:
-    //     "Goodbye, Oat Milk: Since Learning This, I No Longer Add It to My Coffee",
-    //   category: "Doing the work",
-    //   img: news6,
-    // },
-    // {
-    //   title: "17 Effective Dark Spot Correctors, According to Dermatologists",
-    //   category: "Doing the work",
-    //   img: news7,
-    // },
+    {
+      title:
+        "Anine Bing on Her Work Uniform and the Book Every Creative Needs to Read",
+      category: "News",
+      img: blog1,
+    },
+    {
+      title:
+        "Every Time Pamela Anderson Has Gone Makeup-Free: See All Her All-Natural Looks",
+      category: "New Car",
+      img: blog4,
+    },
+    {
+      title:
+        "The Benefits of Walking Are Greater If You Do This One Simple Thing",
+      category: "News",
+      img: blog5,
+    },
+    {
+      title:
+        "Goodbye, Oat Milk: Since Learning This, I No Longer Add It to My Coffee",
+      category: "News",
+      img: blog6,
+    },
+    {
+      title: "17 Effective Dark Spot Correctors, According to Dermatologists",
+      category: "News",
+      img: blog7,
+    },
     {
       title:
         "Not Getting 8 Hours of Sleep? This Wellness Hack Could Make Up for It",
-      category: "Doing the work",
-      img: news8,
+      category: "News",
+      img: blog8,
     },
     {
       title: "The Best Energy-Boosting Foods to Combat Winter Sluggishness",
-      category: "Doing the work",
-      img: news9,
+      category: "News",
+      img: blog9,
     },
     {
       title: "5 Ways to Reset Your Body and Mind After a Tiring Weekend",
-      category: "Doing the work",
-      img: news10,
-    },
-    {
-      title:
-        "3 Healthy Wellness Shots to Start Your Day Right, Courtesy of Nutritionists",
-      category: "Doing the work",
-      img: news11,
-    },
-    {
-      title:
-        "How Much Water Should You Drink in a Day? Experts Set the Record Straight",
-      category: "Doing the work",
-      img: news12,
-    },
-    {
-      title:
-        "The Secret to Better Gut Health and Boosted Brain Function? It Could Be Your Daily Coffee",
-      category: "Doing the work",
-      img: news13,
+      category: "News",
+      img: blog10,
     },
   ];
 

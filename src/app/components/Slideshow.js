@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import slide5 from "@/assets/slides/slide1.png";
 import slide6 from "@/assets/slides/slide2.png";
 import slide7 from "@/assets/slides/slide3.png";
+import slide8 from "@/assets/slides/slide4.png";
 
 const Slideshow = () => {
   const settings = {
@@ -32,7 +33,9 @@ const Slideshow = () => {
     {
       url: slide7,
     },
-   
+    {
+      url: slide8,
+    },
   ];
 
   return (
