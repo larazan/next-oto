@@ -15,7 +15,6 @@ import SortOpt from "../components/SortOpt";
 import CategoryNav from "../components/CategoryNav";
 import Guarantee from "../components/Guarantee";
 import NewsFeed from "../components/NewsFeed";
-import CategoryProduct from "../components/CategoryProduct";
 
 import product from "@/assets/products/product.png"
 import HeroSection from "../components/HeroSection";
@@ -40,7 +39,7 @@ export default function Collection() {
       <HeroSection />
       
       <CategoryNav />
-      <CategoryProduct />
+     
       <div className="w-full bg-white">
         <main className="mx-auto max-w-4xl">
           

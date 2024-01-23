@@ -140,7 +140,7 @@ const RelatedArticle = () => {
                                 A common topic among Aglaonema owners is “My Chinese Evergreen has been one of my happiest plants, but recently some of the bottom leaves have been yellowing. What’s wrong? 
                                 </span> */}
                               </div>
-                              <div className="flex w-4/12 m-0 ml-2 md:ml-5 flex h-26 w-26 flex-12 items-center justify-center">
+                              <div className="flex w-4/12 m-0 ml-2 md:ml-5 h-26 w-26 flex-12 items-center justify-center">
                                 <Link href={"/blogs/blog-one"}>
                                   <Image
                                     alt=""

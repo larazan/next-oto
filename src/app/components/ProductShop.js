@@ -1,173 +1,249 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-import product1 from "@/assets/gallery/gallery1.png";
-import product2 from "@/assets/gallery/gallery2.png";
-import product3 from "@/assets/gallery/gallery3.png";
-import product4 from "@/assets/gallery/gallery4.png";
-import product5 from "@/assets/gallery/gallery5.png";
-import product6 from "@/assets/gallery/gallery6.png";
-import product7 from "@/assets/gallery/gallery7.png";
-import product8 from "@/assets/gallery/gallery8.png";
-import product9 from "@/assets/gallery/gallery9.png";
+import product1 from "@/assets/products/product1.png";
+import product2 from "@/assets/products/product2.png";
+import product3 from "@/assets/products/product3.png";
+import product4 from "@/assets/products/product4.png";
+import product5 from "@/assets/products/product5.png";
+import product6 from "@/assets/products/product6.png";
+import product7 from "@/assets/products/product7.png";
+import product8 from "@/assets/products/product8.png";
+import product9 from "@/assets/products/product9.png";
+import product10 from "@/assets/products/product10.png";
+import product11 from "@/assets/products/product11.png";
+import product12 from "@/assets/products/product12.png";
+import product13 from "@/assets/products/product13.png";
 
 const ProductShop = () => {
-    const [open, setOpen] = useState('');
-    const [isHovered, setIsHovered] = useState(false)
+  const [open, setOpen] = useState("");
+  const [isHovered, setIsHovered] = useState(false);
 
-    const handleHover = () => {
-        setIsHovered(!isHovered);
-    }
+  const handleHover = () => {
+    setIsHovered(!isHovered);
+  };
 
-    const unhover = () => {
-        setOpen('')
-      }
+  const unhover = () => {
+    setOpen("");
+  };
 
-      const productData = [
-        {
-            id: 1,
-            title: "Glow Balm",
-            slug: "product-1",
-            price: "37.95",
-            category: "Ursa Major",
-            img: product1,
-          },
-          {
-            id: 2,
-            title: "Mighty Patch Original Patch",
-            slug: "product-1",
-            price: "8.00",
-            category: "Osea",
-            img: product2,
-          },
-          {
-            id: 3,
-            title: "Mighty Patch Nose Patch",
-            slug: "product-1",
-            price: "21.00",
-            category: "Ilia",
-            img: product3,
-          },
-          {
-            id: 4,
-            title: "Mighty Patch Variety Patch",
-            slug: "product-1",
-            price: "28.00",
-            category: "Heretic",
-            img: product4,
-          },
-          {
-            id: 5,
-            title: "Pore Release",
-            slug: "product-1",
-            price: "35.00",
-            category: "Anthurium",
-            img: product5,
-          },
-          {
-            id: 6,
-            title: "Pore Purity",
-            slug: "product-1",
-            price: "16.00",
-            category: "Monstera",
-            img: product6,
-          },
-          {
-            id: 7,
-            title: "Rescue Balm",
-            slug: "product-1",
-            price: "48.00",
-            category: "Anthurium",
-            img: product7,
-          },
-          {
-            id: 8,
-            title: "Rescue Balm Red Correct",
-            slug: "product-1",
-            price: "85.00",
-            category: "Monstera",
-            img: product8,
-          },
-          {
-            id: 9,
-            title: "Lightning Wand",
-            slug: "product-1",
-            price: "8.00",
-            category: "Anthurium",
-            img: product9,
-          },
-      ];
-    
+  const productData = [
+    {
+      id: 1,
+      title: "Glow Balm",
+      slug: "product-1",
+      price: "37.95",
+      category: "Ursa Major",
+      img: product1,
+    },
+    {
+      id: 2,
+      title: "Mighty Patch Original Patch",
+      slug: "product-1",
+      price: "8.00",
+      category: "Osea",
+      img: product2,
+    },
+    {
+      id: 3,
+      title: "Mighty Patch Nose Patch",
+      slug: "product-1",
+      price: "21.00",
+      category: "Ilia",
+      img: product3,
+    },
+    {
+      id: 4,
+      title: "Mighty Patch Variety Patch",
+      slug: "product-1",
+      price: "28.00",
+      category: "Heretic",
+      img: product4,
+    },
+    {
+      id: 5,
+      title: "Pore Release",
+      slug: "product-1",
+      price: "35.00",
+      category: "Anthurium",
+      img: product5,
+    },
+    {
+      id: 6,
+      title: "Pore Purity",
+      slug: "product-1",
+      price: "16.00",
+      category: "Monstera",
+      img: product6,
+    },
+    {
+      id: 7,
+      title: "Rescue Balm",
+      slug: "product-1",
+      price: "48.00",
+      category: "Anthurium",
+      img: product7,
+    },
+    {
+      id: 8,
+      title: "Rescue Balm Red Correct",
+      slug: "product-1",
+      price: "85.00",
+      category: "Monstera",
+      img: product8,
+    },
+    {
+      id: 9,
+      title: "Lightning Wand",
+      slug: "product-1",
+      price: "8.00",
+      category: "Anthurium",
+      img: product9,
+    },
+    {
+      id: 10,
+      title: "Lightning Wand",
+      slug: "product-1",
+      price: "8.00",
+      category: "Anthurium",
+      img: product10,
+    },
+    {
+      id: 11,
+      title: "Lightning Wand",
+      slug: "product-1",
+      price: "8.00",
+      category: "Anthurium",
+      img: product11,
+    },
+    {
+      id: 12,
+      title: "Lightning Wand",
+      slug: "product-1",
+      price: "8.00",
+      category: "Anthurium",
+      img: product12,
+    },
+    {
+      id: 13,
+      title: "Lightning Wand",
+      slug: "product-1",
+      price: "8.00",
+      category: "Anthurium",
+      img: product13,
+    },
+  ];
 
   return (
     <>
-        <div className={`w-full max-w-[1280px] px-5 py-1 md:px-10 mx-auto bg-white`}>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 py-5 md:my-14 px-0 md:px-0">
-          {productData.map((data, index) => {
-            return (
-              <Link
-                href={`/detail`}
-                className="transform overflow-hidden bg-transparent duration-200 hover:scale-105 cursor-pointer"
-                key={index}
-              >
-                <div className="">
-                <Image
-                  width={500}
-                  height={500}
-                  src={data.img}
-                  alt={data.title}
-                //   onMouseOver={e => console.log(e)}
-                />
-                </div>
-                {/* <div className="p-2 flex flex-col justify-center2 items-center2 space-y-1 text-black/[0.9]">
-                  <h2 className="text-base text-center2 font-medium leading-tight">{data.title}</h2>
-                  <div className="flex items-center2 text-black/[0.5]">
-                    <p className="mr-2 text-lg text-gray-950 font-semibold">
-                      ${data.price}
-                    </p>
-
-                    {data.price && (
-                      <>
-                        <p className="text-base  font-medium line-through">
-                          ${data.price}
+      <div className="max-w-full xl:max-w-[1800px] mx-auto  flex flex-col justify-center items-center bg-white">
+        <div className="w-11/12 mx-auto">
+          <div className=" pb-16 mt-7 md:mt-[72px] ">
+            <div className="mt-12 md:mt-[72px] flex flex-col">
+              <div className="mb-4 md:mb-9">
+                <h3 className="text-2xl md:text-3xl font-bold">
+                  Polaroid Now Generation 2 Cameras
+                </h3>
+              </div>
+              <div className="flex flex-col md:flex-row w-full">
+                <div className="w-full md:w-3/12 ">
+                  <div className="flex flex-col text-md leading-5 md:text-lg md:leading-6 font-semibold custom-rich-text mb-7 md:mb-8">
+                    <div>
+                      <div>
+                        <p className="font-sans">
+                          Discover the beautifully imperfect world of Polaroid
+                          photography with our autofocus instant classic camera.
                         </p>
-                      </>
-                    )}
+                        <p className="font-sans"></p>
+                      </div>
+                    </div>
                   </div>
-                </div> */}
-                <section className="flex grow flex-col justify-start lg:mt-2 lg:justify-between">
-                    <span className="truncate m-0 font-sans text-sm font-bold leading-tight 3xl:text-base text-gray-900">
-                      {data.title}
-                    </span>
-                    <span className="text-sm italic leading-none lg:text-base 3xl:text-base text-gray-900">
-                      {data.category}
-                    </span>
-                    <span className="flex flex-row items-center gap-2 text-sm leading-tight 3xl:text-base">
-                      <span className="font-normal line-through decoration-sale text-gray-900">€29.95</span>
-                      <span className="font-bold text-sale">€32.95</span>
-                    </span>
-                  </section>
-              </Link>
-            );
-          })}
-          <div className="col-span-full mb-8 text-center">
-            <Link
-              className="cursor-pointer inline-block leading-none select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed max-h-20 px-12 py-3 relative bg-white text-black/[.99] hover:bg-black hover:text-white disabled:bg-white/40 disabled:hover:text-black border border-black/[.99] rounded-full"
-              data-variant="rounded_light"
-              href="/collection"
-            >
-              {" "}
-              View all product
-            </Link>
+                  <div>
+                    <a
+                      href="/collections/now-camera"
+                      className="font-semibold animated-underline after:bg-[#fff] before:bg-[#000]"
+                    >
+                      See all
+                    </a>
+                  </div>
+                </div>
+
+                <div className="overflow-x-auto overflow-hidden md:w-9/12 md:-mt-4 ">
+                  <div>
+                    <div className="w-full">
+                      <div className="w-full table">
+                        <div className="w-full  flex px-0 pb-6 -ml-2 md:px-4">
+                          {productData.map((data,index) => {
+                            return (
+<Link
+                            href="/product"
+                            className="h-full z-1 relative text-left"
+                            key={index}
+                          >
+                            <div className="absolute top-10 z-10 left-4 lg:left-10">
+                              <div className="flex gap-2 transition-opacity ease-in-out duration-300 opacity-0 min-h- 7 h-7 mb-3 md:mb-4 pointer-events-none"></div>
+                            </div>
+                            <div className="flex flex-col items-center h-full">
+                              <div className="relative lg:p-4 mb-10 lg:mb-0 hover:lg:shadow-sm lg:w-[342px] lg:min-h-[412px] p-2 h-full cursor-pointer">
+                                <div className="group/card">
+                                  <div className="relative h-[297px] w-[297px] lg:h-[306px] lg:w-[306px] bg-[#e9e9e9]">
+                                    <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
+                                      <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
+                                        <div className="w-full h-full">
+                                          <div className="hidden md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                                            <Image
+                                              src={data.img}
+                                              alt=""
+                                              className="object-cover"
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="pt-4 md:pt-4 flex justify-between w-[297px] lg:w-[306px]">
+                                  <div className="flex-1">
+                                    <p className="text-sm text-black font-semibold max-w-[75%] lg:max-w-[85%] line-clamp-2">
+                                      Polaroid Now Generation 2 i-Type Instant
+                                      Camera
+                                    </p>
+                                  </div>
+                                  <div className="flex flex-col items-end basis-[40%]">
+                                    <p className="flex gap-2">
+                                      <span className="font-sans text-h6 text-right text-black">
+                                        €129.99
+                                      </span>
+                                    </p>
+                                    <div className="flex mt-4 justify-end">
+                                      <button className="button bg-white text-black border-black hover:bg-black hover:text-white hover:border-black text-sm leading-none py-1 px-2 border font-sans rounded-full transition-[all] duration-300 ease-out border-solid disabled:cursor-default undefined">
+                                        Add to cart
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </Link>
+                            )
+                          })}
+                          
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProductShop
+export default ProductShop;

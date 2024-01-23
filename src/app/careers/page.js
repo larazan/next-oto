@@ -25,16 +25,16 @@ export default function Careers() {
       <div className="flex bg-white min-h-screen">
         <div
           data-section="pageHeader-sectionIndex=0"
-          class="w-full h-full min-h-[250px] flex flex-col bg-white px-9 py-16 lg:py-[108px] xs:items-start xs:justify-center lg:items-start lg:justify-center"
+          className="w-full h-full min-h-[250px] flex flex-col bg-white px-9 py-16 lg:py-[108px] xs:items-start xs:justify-center lg:items-start lg:justify-center"
           id="13a49eab-5cb5-4a30-862d-2c88ffc48df3"
         >
-          <h3 class="lg:text-h1 font-headings text-h2 xs:text-left lg:text-left">
+          <h3 className="md:text-3xl font-semibold text-2xl xs:text-left lg:text-left text-gray-900">
             Careers
           </h3>
-          <p class="font-sans text-h5 mt-6 lg:mt-7 leading-7 xs:text-left lg:text-left text-black custom-rich-text">
+          <p className="py-2 text-md mt-6 lg:mt-7 leading-6 xs:text-left lg:text-left text-black ">
             <div>
               <div>
-                <p class="font-sans">
+                <p className="py-2 text-gray-900">
                   We believe a Polaroid photograph has the power to shake the
                   world.&nbsp;From our refurbished vintage Polaroid cameras to
                   the Polaroid Lab, we create&nbsp;beautiful tools to ground you
@@ -43,67 +43,61 @@ export default function Careers() {
                   Shanghai all committed to making life-enriching products that
                   bring people together.
                 </p>
-                <p class="font-sans">
+                <p className="py-2 text-gray-900">
                   Take a look at the opportunities to join our team below.
                 </p>
-                <p class="font-sans"></p>
-                <p class="font-sans"></p>
-                <h2>Finance</h2>
-                <ul class="list-disc list-outside mb-4 ml-4">
-                  <li class="py-2">
+               
+                <h2 className="text-lg font-semibold text-gray-900">Finance</h2>
+                <ul className="list-disc list-outside mb-4 ml-4">
+                  <li className="py-2">
                     <a
                       href="/careers-junior-assistant-controller-enschede-20231016"
-                      class="underline"
+                      className="underline"
                     >
-                      <span className="underline ">
+                      <span className="underline text-gray-900">
                         Junior Assistant Controller (Enschede, The Netherlands)
                       </span>
                     </a>
                   </li>
                 </ul>
-                <h2></h2>
-                <h2></h2>
-                <h2>Product &amp; Process Engineering</h2>
-                <ul class="list-disc list-outside mb-4 ml-4">
-                  <li class="py-2">
+               
+                <h2 className="text-lg font-semibold text-gray-900">Product &amp; Process Engineering</h2>
+                <ul className="list-disc list-outside mb-4 ml-4">
+                  <li className="py-2">
                     <a
                       href="/careers-product-and-process-engineer-enschede-20231124"
-                      class="underline"
+                      className="underline"
                     >
-                      <span className="underline ">
+                      <span className="underline text-gray-900">
                         Product and Process Engineer (Enschede, The Netherlands)
                       </span>
                     </a>
                   </li>
                 </ul>
-                <h2></h2>
-                <h2></h2>
-                <h2>Product</h2>
-                <ul class="list-disc list-outside mb-4 ml-4">
-                  <li class="py-2">
+               
+                <h2 className="text-lg font-semibold text-gray-900">Product</h2>
+                <ul className="list-disc list-outside mb-4 ml-4">
+                  <li className="py-2">
                     <a
                       href="/careers-product-manager-photography-amsterdam-20230727"
-                      class="underline"
+                      className="underline"
                     >
-                      <span className="underline ">
+                      <span className="underline text-gray-900">
                         Product Manager, Photography (Amsterdam, The
                         Netherlands)
                       </span>
                     </a>
                   </li>
                 </ul>
-                <p class="font-sans"></p>
-                <p class="font-sans"></p>
-                <p class="font-sans"></p>
-                <p class="font-sans"></p>
-                <p class="font-sans">
+               
+                <p className="py-2 text-gray-900">
                   If you apply for a position at Polaroid, we will process your
                   personal data. Please see our{" "}
                   <a
                     href="/careers-job-applicant-privacy-policy"
-                    class="underline"
+                    className="underline"
                   >
-                    <strong class="font-headings">
+                    <strong className="font-headings">
                       <span className="underline ">
                         Job Applicant Privacy Policy
                       </span>

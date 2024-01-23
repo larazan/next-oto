@@ -36,6 +36,38 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
     "Dry Skin",
   ]
 
+  const categoryData = [
+    "Air filter",
+    "Air intake",
+    "Batteries",
+    "Body kit",
+    "Brakes",
+    "Bumper",
+    "Cooling",
+    "Deflector",
+    "Drivetrain",
+    "Exhaust",
+    "Exterior",
+    "Fabrication",
+    "Trim",
+    "Floor Mats",
+    "Gauges",
+    "Grilles",
+    "Accessories",
+    "Lights",
+    "Oils & Oil Filters",
+    "Chips",
+    "Roof",
+    "Safety",
+    "Tires",
+    "Velg",
+    "Clean Kit",
+  ]
+
+  const vendorData = [
+
+  ]
+
   return (
     <>
       <div
@@ -52,7 +84,7 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
           <div className="flex justify-end w-1/2">
             <div
               onClick={handleClose}
-              className="cursor-pointer w-8 h-8 flex justify-center items-center rounded-full bg-pink-200 hover:bg-pink-300"
+              className="cursor-pointer w-8 h-8 flex justify-center items-center rounded-full bg-[#ff9800] hover:opacity-80"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,76 +176,19 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
               <div className="duration-300 px-0 pb-3">
                 <div className="space-y-1">
                   <ul className="flex flex-col flex-wrap justify-start space-y-2 px-2">
-                    <li>
+                    {categoryData.map((data,index) => {
+                      return (
+                    <li key={index}>
                       <span className="flex cursor-pointer justify-start text-gray-900 ">
                         <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Moisturizers & Face Oils
+                        {data}
                         </button>
                       </span>
                     </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Serums & Eye Creams
-                        </button>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        SPF & Skin Tint SPF
-                        </button>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Cleansers
-                        </button>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Essence, Mists & Toners
-                        </button>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Masks & Treatments
-                        </button>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Hair Care
-                        </button>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Body Care
-                        </button>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Skincare
-                        </button>
-                      </span>
-                    </li>
-                    <li>
-                      <span className="flex cursor-pointer justify-start text-gray-900 ">
-                        <button className="h-full w-full2 outline-none text-[13px] focus:outline-none">
-                        Tools & Accessories
-                        </button>
-                      </span>
-                    </li>
+                      )
+                    })}
+                    
+                   
                   </ul>
                 </div>
               </div>
@@ -326,7 +301,13 @@ const FilterPopup = ({ isOpen, handleClose, setIsOpen }) => {
               </div>
             </div>
           </DropFilter>
-          
+          <DropFilter title="Price">
+            <div className="overflow-hidden pb-0">
+              <div className="duration-300 px-0 pb-3">
+                
+              </div>
+            </div>
+          </DropFilter>
           <div>
             {/* <div
             className="bg-[#073d30] hover:opacity-80 uppercase  rounded text-white border border-[#073d30] flex p-3 justify-center items-center w-full font-semibold cursor-pointer"

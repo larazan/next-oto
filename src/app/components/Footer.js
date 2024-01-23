@@ -11,7 +11,7 @@ const Footer = () => {
     <>
     <footer
         aria-label="Site Footer"
-        className="bg-black lg:grid lg:grid-cols-5"
+        className="bg-[#313131] lg:grid lg:grid-cols-5"
       >
         <div className=" mx-auto md:w-11/12 px-4  sm:px-6  py-7 text-white md:px-3 md:py-14 lg:px-0">
           <nav className="grid-container md:flex md:flex-row md:flex-wrap md:items-start md:justify-between md:gap-10">

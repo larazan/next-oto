@@ -63,14 +63,37 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
         </div>
 
         <div className="h-4/6 pt-4">
-          <div className={` py-0 flex flex-col w-full `}>
-            <Link
-              href={"/blogs"}
-              className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
-            >
-              <span className="text-sm">Motorcycle</span>
-            </Link>
-          </div>
+          
+          <Accordion title="Motorcycle" bg="f5f5f5">
+            <div className="overflow-hidden pb-0">
+              <div className="duration-300 px-4">
+                <Link
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href={"/plants"}
+                >
+                  News
+                </Link>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  Review
+                </a>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  Advice
+                </a>
+                <a
+                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
+                  href="#"
+                >
+                  Shop
+                </a>
+              </div>
+            </div>
+          </Accordion>
           <div className={` py-0 flex flex-col w-full `}>
             <Link
               href={"/blogs"}

@@ -36,13 +36,13 @@ const SortSelect = () => {
     <>
       <div className="flex z-20">
         <div className="w-[170px] relative flex group bg-white " ref={autoRef}>
-          <button className="w-full rounded-l-md px-2 text-sm text-gray-900 py-1.5 group-hover:bg-pink-50 group-hover:text-gray-700" onClick={toggling}>
+          <button className="w-full rounded-l-md px-2 text-sm text-gray-900 py-1.5 group-hover:bg-[#ffc84e]/20 group-hover:text-gray-700" onClick={toggling}>
             {selectedOption || "sort by"}
           </button>
           <div className="relative">
             <button
               type="button"
-              className=" flex h-full items-center justify-center  px-2 text-gray-600 group-hover:bg-pink-50 group-hover:text-gray-700"
+              className=" flex h-full rounded-r-md items-center justify-center  px-2 text-gray-600 group-hover:bg-[#ffc84e]/20 group-hover:text-gray-700"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ const SortSelect = () => {
                   <button
                     type="button"
                     onClick={onOptionClicked(option)}
-                    className="flex py-1 px-2 w-full rounded text-sm text-gray-500 no-underline hover:bg-pink-50"
+                    className="flex py-1 px-2 w-full rounded text-sm text-gray-500 no-underline hover:bg-[#ffc84e]/20"
                   >
                     <span>{option}</span>
                   </button>
