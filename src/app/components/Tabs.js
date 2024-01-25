@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react";
 
 const Tabs = ({ children }) => {
@@ -10,15 +12,15 @@ const Tabs = ({ children }) => {
 
   return (
     <div className="px-0 md:px-0 mx-auto w-full">
-      <div className="flex border-b border-gray-300">
+      <div className="flex">
         {children.map((child) => (
           <button
             key={child.props.label}
             className={`${
               activeTab === child.props.label
-                ? "border-b-2 border-[#24a3aa] font-bold"
+                ? "border-b-2 border-black "
                 : ""
-            } flex-1 text-gray-900 text-[10px] md:text-xs leading-tight tracking-tight uppercase py-2`}
+            } flex-0 mr-3 text-black text-[15px] md:text-[15px] leading-tight font-bold tracking-tight capitalize py-1`}
             onClick={(e) => handleClick(e, child.props.label)}
           >
             {child.props.label}

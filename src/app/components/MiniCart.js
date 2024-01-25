@@ -36,10 +36,20 @@ const MiniCart = ({ isOpen, handleClose, setIsOpen }) => {
               onClick={handleClose}
               className="cursor-pointer w-8 h-8 rounded-full bg-gray-200 flex justify-center items-center"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-slate-900">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-</svg>
-
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 text-slate-900"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
             </div>
           </div>
           <div className="w-4/6 flex justify-center  uppercase text-sm md:text-lg tracking-wide font-semibold text-[#001838]">
@@ -63,10 +73,12 @@ const MiniCart = ({ isOpen, handleClose, setIsOpen }) => {
           >
             View Cart
           </Link> */}
-           <Link href={"/checkout"} className="w-full py-2 md:py-3 rounded-full uppercase bg-[#023e55] text-white text-lg font-semibold transition-transform active:scale-95 mb-3 hover:opacity-90 flex items-center gap-2 justify-center">
-                Checkout
-                
-              </Link>
+          <Link
+            href={"/checkout"}
+            className="w-full py-2 md:py-3 rounded-full uppercase bg-[#023e55] text-white text-lg font-semibold transition-transform active:scale-95 mb-3 hover:opacity-90 flex items-center gap-2 justify-center"
+          >
+            Checkout
+          </Link>
         </div>
       </div>
       {isOpen ? (
