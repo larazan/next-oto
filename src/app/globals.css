@@ -26,6 +26,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+  tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
 
 .custom-number-input input:focus {
   outline: none !important;

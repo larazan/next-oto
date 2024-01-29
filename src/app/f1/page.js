@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import GoTop from "../components/GoTop";
 import FormulaNav from '../components/FormulaNav';
 import ScheduleRace from '../components/ScheduleRace';
+import Hero from '../components/Hero';
 
 export default function F1() {
   return (
@@ -22,6 +23,8 @@ export default function F1() {
       <Header />
       <GoTop />
       <FormulaNav />
+
+      <Hero />
 
       <Footer />
     </>
