@@ -7,7 +7,7 @@ import flag from "@/assets/icons/i.png"
 const FormulaNav = () => {
   return (
     <>
-      <div className="shadow-lg bg-[#f1f2f3] mb-5 sticky top-0 z-20 border-b2">
+      <div className="shadow-lg bg-[#f1f2f3] sticky top-0 z-20 border-b2">
         <div className="inline-flex2 flex-nowrap mx-auto w-full md:w-full px-4">
           <ul className="flex overflow-x-auto no-scrollbar w-full items-center md:justify-center2 md:space-x-3  tracking-tight font-semibold2 text-sm text-[#b6cce2] shadow2">
             <li className="flex items-center space-x-1 min-w-max nav-item md:-mt-px pr-2 border-r border-gray-400">

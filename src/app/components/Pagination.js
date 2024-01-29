@@ -16,7 +16,7 @@ import Link from 'next/link'
 
         </button>
         <Link
-          className="rounded-full p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-white bg-orange-500"
+          className="rounded-full p-1 w-8 h-8 text-center text-sm font-medium flex justify-center items-center text-red-600 bg-white border border-gray-900"
           href="/blog?category=All%20Categories&amp;page=1"
         >
           1

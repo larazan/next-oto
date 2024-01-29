@@ -342,7 +342,7 @@ const ScheduleRace = () => {
           </div>
           <div className="flex w-1/12  justify-center items-center">
             <Link
-              href={"/"}
+              href={"/f1/calendar"}
               className="text-[11px] text-gray-900 hover:underline tracking-tight underline-offset-2"
             >
               Full results »
