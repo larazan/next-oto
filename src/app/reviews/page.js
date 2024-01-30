@@ -110,7 +110,7 @@ export default function Review() {
             <div className="flex flex-col space-y-2 items-center justify-center px-6 md:px-20 py-6 text-center ">
               <Link href={"/"} className='hover:underline underline-offset-2'>
               <span className="text-gray-900 text-2xl md:text-4xl font-bold">
-              Driven: 2024 Toyota Crown Is A Cool Sedan, But It Doesn't Make Sense
+              Driven: 2024 Toyota Crown Is A Cool Sedan, But It Doesn&apos;t Make Sense
               </span>
               </Link>
               {/* <span className="pt-1 font-semibold uppercase text-[11px] text-gray-900">

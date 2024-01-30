@@ -59,7 +59,7 @@ export default function page() {
                       Press
                     </h2>
                     <p class="text-gray-900  py-2 text-sm leading-tight">
-                      If you're a journalist or blogger interested in photo and
+                      If you&apos;re a journalist or blogger interested in photo and
                       interview requests, or just looking to know more about
                       Polaroid, get in touch with our press team at
                       press@polaroid.com

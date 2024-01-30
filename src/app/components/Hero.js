@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div className="z-10 h-full flex flex-col justify-center bg-black/70 items-center text-center  xs:my-[12px] md:my-[48px] px-[12px] md:px-[30px] md:w-[380px] relative xs:items-center xs:text-center xs:justify-center md:items-start md:text-left md:justify-center">
           <h3 className="font-bold mb-[12px] text-2xl md:text-h5 md:mb-[20px]">
-          Here's More Of That Scion XD86D Four-Door Concept Based On The 86 Coupe
+          Here&apos;s More Of That Scion XD86D Four-Door Concept Based On The 86 Coupe
           </h3>
           <div className=" leading-tight text-md md:text-lg mb-[8px] md:mb-[24px]">
             <div>

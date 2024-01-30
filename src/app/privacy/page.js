@@ -560,8 +560,8 @@ export default function Privacy() {
                 <p className="text-gray-900">
                   <span style={{ fontWeight: 400 }}>
                     The Services may include an activity feed, social media
-                    buttons and widgets, such as the Facebook "Like" button or
-                    the "Share This" button. Your interactions with these
+                    buttons and widgets, such as the Facebook &quot;Like&quot; button or
+                    the &quot;Share This&quot; button. Your interactions with these
                     features are governed by the privacy policy of the
                     third-party service that provides the feature.
                   </span>
