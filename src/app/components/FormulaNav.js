@@ -1,10 +1,15 @@
+"use client"
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from 'next/navigation'
 
 import flag from "@/assets/icons/i.png"
 
 const FormulaNav = () => {
+  const pathname = usePathname()
+ 
   return (
     <>
       <div className="shadow-lg bg-[#f1f2f3] sticky top-0 z-20 border-b2">
@@ -16,8 +21,8 @@ const FormulaNav = () => {
             </li>
             <li className="flex min-w-max nav-item md:-mt-px">
               <Link
-                className="flex items-center md:space-x-2 p-3 cursor-pointer border-b-2 border-red-500"
-                href={"/"}
+                className={`flex items-center md:space-x-2 p-3 cursor-pointer ${pathname === '/f1' ? 'border-red-500' : 'border-[#f1f2f3]'} border-b-2`}
+                href={"/f1"}
               >
                 <span className="text-xs md:text-sm md:inline text-gray-900 font-semibold2">
                   News
@@ -26,8 +31,10 @@ const FormulaNav = () => {
             </li>
             <li className="min-w-max nav-item md:-mt-px">
               <Link
-                className="flex items-center md:space-x-2 p-3 cursor-pointer border-b-2 border-[#f1f2f3]"
-                href={"/"}
+              exact
+                className={`flex items-center md:space-x-2 p-3 cursor-pointer ${pathname === '/f1/calendar' ? 'border-red-500' : 'border-[#f1f2f3]'} border-b-2`}
+                
+                href={"/f1/calendar"}
               >
                 <span className="text-xs md:text-sm md:inline text-gray-900 font-semibold2">
                   Calendar & Results
@@ -36,18 +43,18 @@ const FormulaNav = () => {
             </li>
             <li className="min-w-max nav-item md:-mt-px">
               <Link
-                className="flex items-center md:space-x-2 p-3 cursor-pointer border-b-2 border-[#f1f2f3]"
-                href={"/"}
+                className={`flex items-center md:space-x-2 p-3 cursor-pointer ${pathname === '/f1/standings' ? 'border-red-500' : 'border-[#f1f2f3]'} border-b-2`}
+                href={"/f1/standings"}
               >
                 <span className="text-xs md:text-sm md:inline text-gray-900 font-semibold2">
-                  Standing
+                  Standings
                 </span>
               </Link>
             </li>
             <li className="min-w-max nav-item   md:-mt-px">
               <Link
-                className="flex items-center md:space-x-2 p-3 cursor-pointer border-b-2 border-[#f1f2f3]"
-                href={"/"}
+                className={`flex items-center md:space-x-2 p-3 cursor-pointer ${pathname === '/f1/teams' ? 'border-red-500' : 'border-[#f1f2f3]'} border-b-2`}
+                href={"/f1/teams"}
               >
                 <span className="text-xs md:text-sm md:inline text-gray-900 font-semibold2">
                   Teams
@@ -56,8 +63,8 @@ const FormulaNav = () => {
             </li>
             <li className="min-w-max nav-item   md:-mt-px">
               <Link
-                className="flex items-center md:space-x-2 p-3 cursor-pointer border-b-2 border-[#f1f2f3]"
-                href={"/"}
+                className={`flex items-center md:space-x-2 p-3 cursor-pointer ${pathname === '/f1/drivers' ? 'border-red-500' : 'border-[#f1f2f3]'} border-b-2`}
+                href={"/f1/drivers"}
               >
                 <span className="text-xs md:text-sm md:inline text-gray-900 font-semibold2">
                   Drivers

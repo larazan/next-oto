@@ -29,6 +29,13 @@ import bottas from "@/assets/drivers/bottas.png";
 import zhou from "@/assets/drivers/zhou.png";
 import magnussen from "@/assets/drivers/magnussen.png";
 import hulkenberg from "@/assets/drivers/hulkenberg.png";
+import SortYear from "@/app/components/SortYear";
+
+import spain from "@/assets/icons/spain.svg"
+import japan from "@/assets/icons/japan.svg"
+import f1 from "@/assets/icons/f1.png"
+
+
 
 export default function Drivers() {
   const drivers = [
@@ -196,47 +203,41 @@ export default function Drivers() {
                   F1 Drivers - 2024
                 </span>
               </div>
-              <div className="flex items-center justify-between px-2 border border-gray-300 bg-white rounded-full w-20 h-8">
-                <span className="text-[11px] text-gray-900 font-semibold">
-                  2024
-                </span>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-3 h-3"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </div>
+              <SortYear />
             </div>
             <div className="w-full overflow-x-auto py-4 ">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 {drivers.map((data, index) => {
                   return (
                     <div className="px-3 py-3" key={index}>
-                      <div className="group flex flex-col overflow-hidden hover:scale-105 shadow-lg border px-2">
+                      <div className="group flex flex-col overflow-hidden hover:scale-105 shadow-lg border px-2 bg-gradient-to-bl from-gray-900 to-gray-600 bg-gradient-to-r">
                         <Link href={"/"} className="relative">
-                          <div className="flex pt-2 justify-between leading-tight py-1 border-b-4 border-purple-300">
+                          <div className="flex pt-0 items-center justify-between leading-tight py-1 ">
                             <div>
-                              <span className="text-gray-900 uppercase text-2xl font-bold">
-                                {data.name}
+                              <span className="text-white uppercase text-md font-bold">
+                                Red Bull 
                               </span>
+                            </div>
+                            <div className="w-8">
+                              <Image src={f1} alt="" />
                             </div>
                           </div>
 
-                          <div className="flex w-full justify-between pt-2">
-                            <div className="w-full flex p-2 justify-start items-end">
+                          <div className="flex w-full justify-between pt-2 ">
+                            <div className="w-full flex flex-col space-y-2 p-2 pb-4 justify-end items-end2">
+                            <div>
+                              <span className="text-white uppercase text-2xl font-bold">
+                                {data.name}
+                              </span>
+                            </div>
                               <div className="text-red-600 text-6xl font-extrabold tracking-tighter">
                                 {data.number}
+                              </div>
+                              <div className="flex items-center space-x-2">
+                                <div className="w-6">
+                                  <Image src={spain} alt="" />
+                                </div>
+                                <span className="text-sm text-white">{data.nation}</span>
                               </div>
                             </div>
                             <Image src={data.img} alt="" className=" h-full" />{" "}

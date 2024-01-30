@@ -66,7 +66,7 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
           
           <Accordion title="Motorcycle" bg="f5f5f5">
             <div className="overflow-hidden pb-0">
-              <div className="duration-300 px-4">
+              <div className="duration-300 px-4 uppercase">
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
                   href={"/plants"}
@@ -94,7 +94,7 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
               </div>
             </div>
           </Accordion>
-          <div className={` py-0 flex flex-col w-full `}>
+          <div className={` py-0 flex flex-col w-full uppercase`}>
             <Link
               href={"/blogs"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
@@ -105,10 +105,10 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
           
           <Accordion title="News" bg="f5f5f5">
             <div className="overflow-hidden pb-0">
-              <div className="duration-300 px-4">
+              <div className="duration-300 px-4 uppercase">
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
-                  href={"/plants"}
+                  href={"/blogs"}
                 >
                   Industry News
                 </Link>
@@ -154,10 +154,10 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
 
           <Accordion title="Racing" bg="f5f5f5">
             <div className="overflow-hidden pb-0">
-              <div className="duration-300 px-4">
+              <div className="duration-300 px-4 uppercase">
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
-                  href={"/plants"}
+                  href={"/f1"}
                 >
                   Formula 1
                 </Link>
@@ -185,30 +185,25 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
 
           <Accordion title="Shops" bg="f5f5f5">
             <div className="overflow-hidden pb-0">
-              <div className="duration-300 px-4">
+              <div className="duration-300 px-4 uppercase">
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
                   href={"/collection"}
                 >
-                  Plants
+                  Spareparts
                 </Link>
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
                   href={"/collection"}
                 >
-                  Pots
+                  Oils
                 </Link>
+                
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
                   href={"/collection"}
                 >
-                  Soils
-                </Link>
-                <Link
-                  className="flex items-center h-8 text-xs font-semibold text-gray-900 "
-                  href={"/collection"}
-                >
-                  Care
+                  Clean & Care
                 </Link>
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
@@ -231,7 +226,7 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
               href={"/blogs"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
             >
-              <span className="text-sm">Podcast</span>
+              <span className="text-sm uppercase">Podcast</span>
             </Link>
           </div>
           <div className={` py-0 flex flex-col w-full `}>
@@ -239,17 +234,17 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
               href={"/blogs"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
             >
-              <span className="text-sm">Reviews</span>
+              <span className="text-sm uppercase">Reviews</span>
             </Link>
           </div>
-          <div className={` py-0 flex flex-col w-full `}>
+          {/* <div className={` py-0 flex flex-col w-full `}>
             <Link
               href={"/blogs"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
             >
               <span className="text-sm">Shop</span>
             </Link>
-          </div>
+          </div> */}
         </div>
         {/* <div className="flex h-2/6 items-end justify-end flex-col space-y-1 py-8 mt-0">
           <div className="flex w-full items-center space-x-2 cursor-pointer">

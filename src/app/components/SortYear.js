@@ -2,9 +2,9 @@
 
 import React, { useState, useRef, useEffect } from "react";
 
-const options = ["F1", "MotoGP", "FE", "Le mans", "Nascar"];
+const options = ["2020", "2021", "2022", "2023", "2024"];
 
-const SortVenue = () => {
+const SortYear = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -34,10 +34,10 @@ const SortVenue = () => {
 
   return (
     <>
-    <div className="flex w-full z-30">
-        <div className="relative flex items-center justify-between px-2 border border-gray-300 bg-white rounded-full w-full h-8 cursor-pointer" ref={autoRef} onClick={toggling}>
+    <div className="flex  z-10">
+        <div className="relative flex items-center justify-between px-2 border border-gray-300 bg-white rounded-full w-20 h-8 cursor-pointer" ref={autoRef} onClick={toggling}>
           <button className="text-[11px] text-gray-900 font-semibold uppercase" >
-            {selectedOption || "F1"}
+            {selectedOption || "2024"}
           </button>
           <span >
            
@@ -58,7 +58,7 @@ const SortVenue = () => {
             
           </span>
           {isOpen && (
-            <div className="min-w-[140px] absolute top-5 py-2 left-0 z-10 mt-4 origin-top-right rounded border border-gray-200 bg-white shadow-lg">
+            <div className="min-w-[100px] absolute top-5 py-2 right-0 z-10 mt-4 origin-top-right rounded border border-gray-200 bg-white shadow-lg">
               {options.map((option, index) => (
                 <div className="px-2" key={index}>
                   <button
@@ -78,4 +78,4 @@ const SortVenue = () => {
   );
 };
 
-export default SortVenue;
+export default SortYear;

@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 import GoTop from "../../components/GoTop";
 import FormulaNav from "../../components/FormulaNav";
 import ScheduleRace from "../../components/ScheduleRace";
+import SortYear from "@/app/components/SortYear";
 
 export default function Calendar() {
   const calendars = [
@@ -227,27 +228,7 @@ export default function Calendar() {
                   F1 Calendar - 2024
                 </span>
               </div>
-              <div className="flex items-center justify-between px-2 border border-gray-300 bg-white rounded-full w-20 h-8">
-                <span className="text-[11px] text-gray-900 font-semibold">
-                  2024
-                </span>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-3 h-3"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </div>
+              <SortYear />
             </div>
             <div className="overflow-x-auto py-4 ">
               <table className="min-w-full text-sm">
