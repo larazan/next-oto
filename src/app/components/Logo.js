@@ -6,7 +6,7 @@ import lg from "@/assets/img/autocar_logo.svg"
 const Logo = () => {
   return (
     <>
-    <Image src={lg} alt='' className='w-20 md:w-24 h-full' />
+    <Image src={lg} alt='' className='w-32 md:w-32 h-full' />
     </>
   )
 }

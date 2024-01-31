@@ -37,15 +37,15 @@ const Header = () => {
             <div className="w-2/6">
               <button className=" h-8 w-8 md:hidden2 text-black" onClick={clickMenu}>
                 <svg
-                  class="w-6 h-6"
+                  className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M4 6h16M4 12h8m-8 6h16"
                   ></path>
                 </svg>
@@ -133,8 +133,8 @@ const Header = () => {
                 <span className="font-bold">{totalQTY}</span>
               </div> */}
 
-                <div class="absolute top-0 right-0 inset-2 object-right-top">
-                  <span class="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
+                <div className="absolute top-0 right-0 inset-2 object-right-top">
+                  <span className="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
                     {totalQTY}
                   </span>
                 </div>
@@ -228,8 +228,8 @@ const Header = () => {
                 <span className="font-bold">{totalQTY}</span>
               </div> */}
 
-              <div class="absolute top-0 right-0 inset-1 object-right-top">
-                <span class="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
+              <div className="absolute top-0 right-0 inset-1 object-right-top">
+                <span className="-mr-22 inline-flex items-center rounded-full  bg-[#ff9800] px-1 py-1 text-[0.6rem]  leading-none text-gray-900 lg:-mt-1 ">
                   {totalQTY}
                 </span>
               </div>

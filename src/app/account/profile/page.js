@@ -46,7 +46,7 @@ export default function Profile() {
               </div>
               <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-11/12 md:w-11/12">
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Name
                   </label>
                   <input
@@ -57,7 +57,7 @@ export default function Profile() {
                   />
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Gender
                   </label>
                   <div className="flex flex-row space-x-2">
@@ -71,7 +71,7 @@ export default function Profile() {
 
               <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-11/12 md:w-11/12">
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Date of Birth
                   </label>
                   <div className="relative items-center">
@@ -81,7 +81,7 @@ export default function Profile() {
                       placeholder="date Birth"
                       value={"03 April 2000"}
                     />
-                    <button class="absolute inline-block bottom-3 right-4 ">
+                    <button className="absolute inline-block bottom-3 right-4 ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -100,7 +100,7 @@ export default function Profile() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Email
                   </label>
                   <div className="relative items-center">
@@ -124,7 +124,7 @@ export default function Profile() {
 
               <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-11/12 md:w-11/12">
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Address1
                   </label>
                   <div className="relative items-center">
@@ -136,7 +136,7 @@ export default function Profile() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Address2
                   </label>
                   <div className="relative items-center">
@@ -150,7 +150,7 @@ export default function Profile() {
               </div>
               <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-11/12 md:w-11/12">
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     City
                   </label>
                   <div className="relative items-center">
@@ -162,7 +162,7 @@ export default function Profile() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Post Code / Zip Code
                   </label>
                   <div className="relative items-center">
@@ -185,7 +185,7 @@ export default function Profile() {
 
               <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2 mx-auto w-11/12 md:w-11/12">
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Home Phone
                   </label>
                   <div className="relative items-center">
@@ -194,7 +194,7 @@ export default function Profile() {
                       type="text"
                       placeholder="21219923"
                     />
-                    <button class="absolute inline-block bottom-3 right-4 ">
+                    <button className="absolute inline-block bottom-3 right-4 ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -213,7 +213,7 @@ export default function Profile() {
                   </div>
                 </div>
                 <div className="w-full md:w-1/2 flex flex-col space-y-1 ">
-                  <label class="text-sm md:text-base font-semibold block text-gray-800">
+                  <label className="text-sm md:text-base font-semibold block text-gray-800">
                     Mobile Number
                   </label>
                   <div className="relative items-center">
@@ -222,7 +222,7 @@ export default function Profile() {
                       type="text"
                       placeholder="21219923"
                     />
-                    <button class="absolute inline-block bottom-3 right-4 ">
+                    <button className="absolute inline-block bottom-3 right-4 ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"

@@ -136,9 +136,9 @@ export default function Checkout() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <line x1="18" y1="6" x2="6" y2="18"></line>
                       <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -154,9 +154,9 @@ export default function Checkout() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <polyline points="18 15 12 9 6 15"></polyline>
                     </svg>
@@ -181,9 +181,9 @@ export default function Checkout() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <line x1="18" y1="6" x2="6" y2="18"></line>
                       <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -199,9 +199,9 @@ export default function Checkout() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <polyline points="18 15 12 9 6 15"></polyline>
                     </svg>
@@ -342,13 +342,13 @@ export default function Checkout() {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="-252.3 356.1 163 80.9"
-                  class="eHdoK"
+                  className="eHdoK"
                 >
                   <path
                     fill="none"
                     stroke="currentColor"
                     stroke-miterlimit="10"
-                    stroke-width="2"
+                    strokeWidth="2"
                     d="M-108.9 404.1v30c0 1.1-.9 2-2 2H-231c-1.1 0-2-.9-2-2v-75c0-1.1.9-2 2-2h120.1c1.1 0 2 .9 2 2v37m-124.1-29h124.1"
                   ></path>
                   <circle
@@ -373,7 +373,7 @@ export default function Checkout() {
                     fill="none"
                     stroke="currentColor"
                     stroke-miterlimit="10"
-                    stroke-width="2"
+                    strokeWidth="2"
                     d="M-128.7 400.1H-92m-3.6-4.1 4 4.1-4 4.1"
                   ></path>
                 </svg>
@@ -394,40 +394,40 @@ export default function Checkout() {
           </div>
           <div className="mt-2 flex w-full flex-col rounded bg-[#f4f4f4]">
             <div className={`flex justify-between py-4 px-3 rounded-t ${show === false ? 'bg-blue-100 border-[#006eff]' : 'bg-white' } border cursor-pointer`} onClick={() => setShow(false) }>
-              <div class="flex items-center">
+              <div className="flex items-center">
                 <input
                   id="country-option-1"
                   type="radio"
                   name="countries"
                   value="USA"
-                  class="h-4 w-4 bg-white dark:bg-white border-gray-300 focus:ring-2 focus:ring-blue-300"
+                  className="h-4 w-4 bg-white dark:bg-white border-gray-300 focus:ring-2 focus:ring-blue-300"
                   aria-labelledby="country-option-1"
                   aria-describedby="country-option-1"
                   checked=""
                 />
                 <label
                   for="country-option-1"
-                  class="text-sm text-gray-900 ml-2 block"
+                  className="text-sm text-gray-900 ml-2 block"
                 >
                   Same as shipping address
                 </label>
               </div>
             </div>
             <div className={`flex justify-between py-4 px-3 ${show ? 'bg-blue-100 border-[#006eff]' : 'bg-white' } border cursor-pointer`} onClick={() => setShow(true)}>
-              <div class="flex items-center">
+              <div className="flex items-center">
                 <input
                   id="country-option-2"
                   type="radio"
                   name="countries"
                   value="USA"
-                  class="h-4 w-4 bg-white dark:bg-white border-gray-300 focus:ring-2 focus:ring-blue-300"
+                  className="h-4 w-4 bg-white dark:bg-white border-gray-300 focus:ring-2 focus:ring-blue-300"
                   aria-labelledby="country-option-2"
                   aria-describedby="country-option-2"
                   checked=""
                 />
                 <label
                   for="country-option-2"
-                  class="text-sm text-gray-900 ml-2 block"
+                  className="text-sm text-gray-900 ml-2 block"
                 >
                   Use a different billing address
                 </label>
@@ -498,9 +498,9 @@ export default function Checkout() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <line x1="18" y1="6" x2="6" y2="18"></line>
                       <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -516,9 +516,9 @@ export default function Checkout() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <polyline points="18 15 12 9 6 15"></polyline>
                     </svg>
@@ -543,9 +543,9 @@ export default function Checkout() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <line x1="18" y1="6" x2="6" y2="18"></line>
                       <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -561,9 +561,9 @@ export default function Checkout() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <polyline points="18 15 12 9 6 15"></polyline>
                     </svg>
@@ -603,13 +603,13 @@ export default function Checkout() {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2.5"
+              strokeWidth="2.5"
               stroke="currentColor"
               className="w-3 h-3 md:w-4 md:h-4 "
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
               ></path>
             </svg>

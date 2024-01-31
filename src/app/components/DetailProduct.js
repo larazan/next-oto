@@ -38,7 +38,7 @@ const DetailProduct = () => {
               </svg>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 md:h-5 md:w-5 filled"
+                className="h-4 w-4 md:h-5 md:w-5 filled"
                 viewBox="0 0 20 20"
               >
                 <path
@@ -48,7 +48,7 @@ const DetailProduct = () => {
               </svg>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 md:h-5 md:w-5 filled"
+                className="h-4 w-4 md:h-5 md:w-5 filled"
                 viewBox="0 0 20 20"
               >
                 <path
@@ -58,7 +58,7 @@ const DetailProduct = () => {
               </svg>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 md:h-5 md:w-5 filled"
+                className="h-4 w-4 md:h-5 md:w-5 filled"
                 viewBox="0 0 20 20"
               >
                 <path
@@ -68,7 +68,7 @@ const DetailProduct = () => {
               </svg>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4 md:h-5 md:w-5 filled"
+                className="h-4 w-4 md:h-5 md:w-5 filled"
                 viewBox="0 0 20 20"
               >
                 <path
@@ -92,7 +92,7 @@ const DetailProduct = () => {
           viewBox="0 0 100 1"
           preserveAspectRatio="none"
         >
-          <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
+          <path d="M0,0 100,0" stroke="#707070" strokeWidth="1"></path>
         </svg>
         <ul className="space-y-2 my-4 md:hidden  text-gray-900">
           <li className="xl:justify-left before:mr-2 before:text-primary before:content-['\2713'] sm:text-sm md:flex lg:text-base xl:flex xl:w-auto xl:items-center xl:text-left">
@@ -119,7 +119,7 @@ const DetailProduct = () => {
           viewBox="0 0 100 1"
           preserveAspectRatio="none"
         >
-          <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
+          <path d="M0,0 100,0" stroke="#707070" strokeWidth="1"></path>
         </svg>
         <section className="flex flex-row flex-wrap justify-between">
           <h2 className="sr-only">Product options</h2>
@@ -145,7 +145,7 @@ const DetailProduct = () => {
           viewBox="0 0 100 1"
           preserveAspectRatio="none"
         >
-          <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
+          <path d="M0,0 100,0" stroke="#707070" strokeWidth="1"></path>
         </svg>
         {/* <section className="flex flex-row flex-wrap justify-between">
           <div className="flex flex-col justify-start">
@@ -170,7 +170,7 @@ const DetailProduct = () => {
             viewBox="0 0 100 1"
             preserveAspectRatio="none"
           >
-            <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
+            <path d="M0,0 100,0" stroke="#707070" strokeWidth="1"></path>
           </svg>
         </section> */}
         <ul>
@@ -194,7 +194,7 @@ const DetailProduct = () => {
             <div className="col-span-1 col-start-1 flex flex-row items-center justify-start">
               <div className="relative flex w-full flex-row items-center justify-between gap-1 w-[120px]">
                 <button
-                  className="cursor-pointer inline-block leading-none select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed relative bg-grayish text-black hover:bg-[#7e8784] hover:text-white disabled:bg-grayish/40 disabled:hover:text-black rounded-full w-8 h-8 max-w-8 max-h-8 overflow-hidden flex justify-center items-center h-8 w-8 flex-none leading-[0]"
+                  className="cursor-pointer select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed relative bg-grayish text-black hover:bg-[#7e8784] hover:text-white disabled:bg-grayish/40 disabled:hover:text-black rounded-full w-8 h-8 max-w-8 max-h-8 overflow-hidden flex justify-center items-center flex-none leading-[0]"
                   type="button"
                   data-variant="circle_grayLight"
                 >
@@ -204,7 +204,7 @@ const DetailProduct = () => {
                   1
                 </span>
                 <button
-                  className="cursor-pointer inline-block leading-none select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed relative bg-grayish text-black hover:bg-[#7e8784] hover:text-white disabled:bg-grayish/40 disabled:hover:text-black rounded-full w-8 h-8 max-w-8 max-h-8 overflow-hidden flex justify-center items-center h-8 w-8 flex-none leading-[0]"
+                  className="cursor-pointer  select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed relative bg-grayish text-black hover:bg-[#7e8784] hover:text-white disabled:bg-grayish/40 disabled:hover:text-black rounded-full w-8 h-8 max-w-8 max-h-8 overflow-hidden flex justify-center items-center  flex-none leading-[0]"
                   type="button"
                   data-variant="circle_grayLight"
                 >
@@ -218,7 +218,7 @@ const DetailProduct = () => {
               viewBox="0 0 100 1"
               preserveAspectRatio="none"
             >
-              <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
+              <path d="M0,0 100,0" stroke="#707070" strokeWidth="1"></path>
             </svg>
           </li>
         </ul>
@@ -235,7 +235,7 @@ const DetailProduct = () => {
             viewBox="0 0 100 1"
             preserveAspectRatio="none"
           >
-            <path d="M0,0 100,0" stroke="#707070" stroke-width="1"></path>
+            <path d="M0,0 100,0" stroke="#707070" strokeWidth="1"></path>
           </svg>
 
           <section className="flex justify-between md:flex-col 3xl:flex-row-reverse 3xl:items-start">
@@ -264,13 +264,13 @@ const DetailProduct = () => {
                       fill="#1a171b"
                       fill-rule="nonzero"
                       stroke="#000"
-                      stroke-width=".5"
+                      strokeWidth=".5"
                     ></path>
                   </svg>
                 </button>
               </div>
               <button
-                className="cursor-pointer flex items-center inline-block leading-none select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed max-h-10 px-6 py-3 relative bg-[#023e55] text-white hover:opacity-80 disabled:bg-[#023e55]/40 rounded-full group"
+                className="cursor-pointer flex items-center leading-none select-none text-center focus:outline-none transition-colors disabled:cursor-not-allowed max-h-10 px-6 py-3 relative bg-[#023e55] text-white hover:opacity-80 disabled:bg-[#023e55]/40 rounded-full group"
                 aria-label="Add to cart"
                 type="button"
                 data-variant="rounded_yellow"

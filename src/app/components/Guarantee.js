@@ -50,7 +50,7 @@ const Guarantee = () => {
               viewBox="0 0 1 100"
               preserveAspectRatio="none"
             >
-              <path d="M0,0 0,100" stroke="#707070" stroke-width="1"></path>
+              <path d="M0,0 0,100" stroke="#707070" strokeWidth="1"></path>
             </svg>
             <div className="flex flex-1 flex-col justify-start xl:flex-row items-center text-gray-900">
               <Image src={gua} alt='' />

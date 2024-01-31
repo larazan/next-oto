@@ -52,8 +52,8 @@ export default function page() {
                     xmlns="http://www.w3.org/2000/svg"
                     className="transform rotate-90 mr-[9px] lg:mr-[14.67px] h-[5px] lg:h-[7px]"
                     stroke="#000"
-                    stroke-width="2"
-                    stroke-linecap="square"
+                    strokeWidth="2"
+                    strokeLinecap="square"
                   >
                     <path d="M12 2.33203L7 7.33203L2 2.33203"></path>
                   </svg>
@@ -415,8 +415,8 @@ export default function page() {
                       d="M11 19L9.55 17.7052C4.4 13.1243 1 10.103 1 6.3951C1 3.37384 3.42 1 6.5 1C8.24 1 9.91 1.79455 11 3.05014C12.09 1.79455 13.76 1 15.5 1C18.58 1 21 3.37384 21 6.3951C21 10.103 17.6 13.1243 12.45 17.715L11 19Z"
                       fill="white"
                       stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="square"
+                      strokeWidth="2"
+                      strokeLinecap="square"
                     ></path>
                   </svg>
                 </button>

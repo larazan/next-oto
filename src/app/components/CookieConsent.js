@@ -19,8 +19,8 @@ import React, { useState } from "react";
                
                
                 <div className="pb-4 text-sm md:text-base text-gray-800 leading-tight md:leading-snug">
-                <p class="text-sm text-brand-dark">We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By clicking “Got it” or by continuing browsing this website, you consent to the use of ALL the cookies. <a class="text-[#5ca795] block" href="/policies/privacy-policy" >Read Privacy Policy</a></p>
-                <button class="mt-2 block underline text-brand-dark font-medium" onClick={handleClick}>Got It</button>
+                <p className="text-sm text-brand-dark">We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By clicking “Got it” or by continuing browsing this website, you consent to the use of ALL the cookies. <a className="text-[#5ca795] block" href="/policies/privacy-policy" >Read Privacy Policy</a></p>
+                <button className="mt-2 block underline text-brand-dark font-medium" onClick={handleClick}>Got It</button>
                 </div>
               </div>
             </div>

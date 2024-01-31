@@ -141,8 +141,8 @@ const ProductShop = () => {
     <>
       <div className="max-w-full xl:max-w-[1800px] mx-auto  flex flex-col justify-center items-center bg-white">
         <div className="w-11/12 mx-auto">
-          <div className=" pb-16 mt-7 md:mt-[72px] ">
-            <div className="mt-12 md:mt-[72px] flex flex-col">
+          <div className=" md:pb-16 mt-0 md:mt-[72px] ">
+            <div className="mt-4 md:mt-[72px] flex flex-col">
               <div className="mb-4 md:mb-9">
                 <h3 className="text-2xl md:text-3xl font-bold text-black">
                   Polaroid Now Generation 2 Cameras

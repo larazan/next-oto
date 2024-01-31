@@ -20,7 +20,8 @@ const Slideshow = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 4000,
-    
+    lazyLoad: 'progressive',
+    arrow: false,
   };
 
   const slides = [
@@ -40,13 +41,14 @@ const Slideshow = () => {
 
   return (
     <>
-      <div className="max-w-[1400px]2 h-full w-full mx-auto py-0 px-02 relative group">
-        <div className="w-full h-full rounded-2xl bg-center bg-cover object-cover duration-500">
+    
+      <div className="max-w-[1400px] bg-white overflow-hidden no-scrollbar overflow-x-auto h-full w-full2 mx-auto  relative2 group2">
+        <div className="w-full2 h-full2  bg-center2 bg-cover2 object-cover2 duration-500">
           <Slider {...settings}>
             {slides.map((data, index) => {
               return (
-                <div className="w-full" key={index}>
-                  <Image src={data.url} alt="" className="object-cover md:h-full w-full"  />
+                <div className="w-full2" key={index}>
+                  <Image src={data.url} alt="" className="object-cover md:h-full w-full2"  />
                 </div>
               );
             })}
@@ -54,6 +56,7 @@ const Slideshow = () => {
         </div>
      
       </div>
+      
     </>
   );
 };

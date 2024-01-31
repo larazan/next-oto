@@ -149,7 +149,7 @@ const ProductList = () => {
                         fill="#1a171b"
                         fill-rule="nonzero"
                         stroke="#000"
-                        stroke-width=".5"
+                        strokeWidth=".5"
                       ></path>
                     </svg>
                   </button>

@@ -19,11 +19,88 @@ import product6 from "@/assets/products/product6.png";
 import product7 from "@/assets/products/product7.png";
 import product8 from "@/assets/products/product8.png";
 import product9 from "@/assets/products/product9.png";
-import ReviewList from "../components/ReviewList";
-import Recommended from "../components/Recommended";
+
+
 import ProductShop from "../components/ProductShop";
+import Spareparts from "../components/Spareparts";
 
 export default function page() {
+  const productData = [
+    {
+      id: 1,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Ursa Major",
+      img: product1,
+    },
+    {
+      id: 2,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Osea",
+      img: product2,
+    },
+    {
+      id: 3,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Ilia",
+      img: product3,
+    },
+    {
+      id: 4,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Heretic",
+      img: product4,
+    },
+    {
+      id: 5,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Anthurium",
+      img: product5,
+    },
+    {
+      id: 6,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Monstera",
+      img: product6,
+    },
+    {
+      id: 7,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Anthurium",
+      img: product7,
+    },
+    {
+      id: 8,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Monstera",
+      img: product8,
+    },
+    {
+      id: 9,
+      title: "Polaroid Now Generation 2 i-Type Instant Camera",
+      slug: "product-1",
+      price: "€129.99",
+      category: "Anthurium",
+      img: product9,
+    },
+    
+  ];
+
   return (
     <>
       <Head>
@@ -37,12 +114,15 @@ export default function page() {
       <NewsFeed />
       <Slideshow />
 
+<Spareparts />
+    
+
       <div className="max-w-full xl:max-w-[1800px] mx-auto  flex flex-col justify-center items-center bg-white">
         <div className="w-11/12 mx-auto">
-          <div className=" pb-16 mt-7 md:mt-[72px] ">
-            <div className="mt-12 md:mt-[72px] flex flex-col">
+          <div className=" md:pb-16 mt-0 md:mt-[72px] ">
+            <div className="mt-4 md:mt-[72px] flex flex-col">
               <div className="mb-4 md:mb-9">
-                <h3 className="text-2xl md:text-3xl font-bold text-black">
+                <h3 className="text-2xl md:text-3xl font-bold text-black leading-tight">
                   Polaroid Now Generation 2 Cameras
                 </h3>
               </div>
@@ -76,9 +156,12 @@ export default function page() {
                     >
                       <div className="w-full table">
                         <div className="w-full  flex px-0 pb-6 -ml-2 md:px-4">
-                          <Link
+                          {productData.map((data,index) => {
+                            return (
+<Link
                             href="/product"
                             className="h-full z-1 relative text-left"
+                            key={index}
                           >
                             <div className="absolute top-10 z-10 left-4 lg:left-10">
                               <div className="flex gap-2 transition-opacity ease-in-out duration-300 opacity-0 min-h- 7 h-7 mb-3 md:mb-4 pointer-events-none"></div>
@@ -91,7 +174,7 @@ export default function page() {
                                       <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
                                         <div className="w-full h-full">
                                           <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
-                                            <Image src={product1} alt="" className="object-cover" />
+                                            <Image src={data.img} alt="" className="object-cover" />
                                           </div>
                                           
                                         </div>
@@ -103,14 +186,13 @@ export default function page() {
                                 <div className="pt-4 md:pt-4 flex justify-between w-[297px] lg:w-[306px]">
                                   <div className="flex-1">
                                     <p className="text-sm text-black font-semibold max-w-[75%] lg:max-w-[85%] line-clamp-2">
-                                      Polaroid Now Generation 2 i-Type Instant
-                                      Camera
+                                      {data.title}
                                     </p>
                                   </div>
                                   <div className="flex flex-col items-end basis-[40%]">
                                     <p className="flex gap-2">
                                       <span className="font-sans text-h6 text-right text-black">
-                                        €129.99
+                                        {data.price}
                                       </span>
                                     </p>
                                     <div className="flex mt-4 justify-end">
@@ -123,194 +205,10 @@ export default function page() {
                               </div>
                             </div>
                           </Link>
-                          <Link
-                            href="/product"
-                            className="h-full z-1 relative text-left"
-                          >
-                            <div className="absolute top-10 z-10 left-4 lg:left-10">
-                              <div className="flex gap-2 transition-opacity ease-in-out duration-300 opacity-0 min-h- 7 h-7 mb-3 md:mb-4 pointer-events-none"></div>
-                            </div>
-                            <div className="flex flex-col items-center h-full">
-                              <div className="relative lg:p-4 mb-10 lg:mb-0 hover:lg:shadow-sm lg:w-[342px] lg:min-h-[412px] p-2 h-full cursor-pointer">
-                                <div className="group/card">
-                                  <div className="relative h-[297px] w-[297px] lg:h-[306px] lg:w-[306px] bg-[#e9e9e9]">
-                                    <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
-                                      <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
-                                        <div className="w-full h-full">
-                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
-                                            <Image src={product1} alt="" className="object-cover" />
-                                          </div>
-                                          
-                                        </div>
-                                      </div>
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="pt-4 md:pt-4 flex justify-between w-[297px] lg:w-[306px]">
-                                  <div className="flex-1">
-                                    <p className="text-sm text-black font-semibold max-w-[75%] lg:max-w-[85%] line-clamp-2">
-                                      Polaroid Now Generation 2 i-Type Instant
-                                      Camera
-                                    </p>
-                                  </div>
-                                  <div className="flex flex-col items-end basis-[40%]">
-                                    <p className="flex gap-2">
-                                      <span className="font-sans text-h6 text-right text-black">
-                                        €129.99
-                                      </span>
-                                    </p>
-                                    <div className="flex mt-4 justify-end">
-                                      <button className="button bg-white text-black border-black hover:bg-black hover:text-white hover:border-black text-sm leading-none py-1 px-2 border font-sans rounded-full transition-[all] duration-300 ease-out border-solid disabled:cursor-default undefined">
-                                        Add to cart
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </Link>
-                          <Link
-                            href="/product"
-                            className="h-full z-1 relative text-left"
-                          >
-                            <div className="absolute top-10 z-10 left-4 lg:left-10">
-                              <div className="flex gap-2 transition-opacity ease-in-out duration-300 opacity-0 min-h- 7 h-7 mb-3 md:mb-4 pointer-events-none"></div>
-                            </div>
-                            <div className="flex flex-col items-center h-full">
-                              <div className="relative lg:p-4 mb-10 lg:mb-0 hover:lg:shadow-sm lg:w-[342px] lg:min-h-[412px] p-2 h-full cursor-pointer">
-                                <div className="group/card">
-                                  <div className="relative h-[297px] w-[297px] lg:h-[306px] lg:w-[306px] bg-[#e9e9e9]">
-                                    <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
-                                      <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
-                                        <div className="w-full h-full">
-                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
-                                            <Image src={product1} alt="" className="object-cover" />
-                                          </div>
-                                          
-                                        </div>
-                                      </div>
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="pt-4 md:pt-4 flex justify-between w-[297px] lg:w-[306px]">
-                                  <div className="flex-1">
-                                    <p className="text-sm text-black font-semibold max-w-[75%] lg:max-w-[85%] line-clamp-2">
-                                      Polaroid Now Generation 2 i-Type Instant
-                                      Camera
-                                    </p>
-                                  </div>
-                                  <div className="flex flex-col items-end basis-[40%]">
-                                    <p className="flex gap-2">
-                                      <span className="font-sans text-h6 text-right text-black">
-                                        €129.99
-                                      </span>
-                                    </p>
-                                    <div className="flex mt-4 justify-end">
-                                      <button className="button bg-white text-black border-black hover:bg-black hover:text-white hover:border-black text-sm leading-none py-1 px-2 border font-sans rounded-full transition-[all] duration-300 ease-out border-solid disabled:cursor-default undefined">
-                                        Add to cart
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </Link>
-                          <Link
-                            href="/product"
-                            className="h-full z-1 relative text-left"
-                          >
-                            <div className="absolute top-10 z-10 left-4 lg:left-10">
-                              <div className="flex gap-2 transition-opacity ease-in-out duration-300 opacity-0 min-h- 7 h-7 mb-3 md:mb-4 pointer-events-none"></div>
-                            </div>
-                            <div className="flex flex-col items-center h-full">
-                              <div className="relative lg:p-4 mb-10 lg:mb-0 hover:lg:shadow-sm lg:w-[342px] lg:min-h-[412px] p-2 h-full cursor-pointer">
-                                <div className="group/card">
-                                  <div className="relative h-[297px] w-[297px] lg:h-[306px] lg:w-[306px] bg-[#e9e9e9]">
-                                    <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
-                                      <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
-                                        <div className="w-full h-full">
-                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
-                                            <Image src={product1} alt="" className="object-cover" />
-                                          </div>
-                                          
-                                        </div>
-                                      </div>
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="pt-4 md:pt-4 flex justify-between w-[297px] lg:w-[306px]">
-                                  <div className="flex-1">
-                                    <p className="text-sm text-black font-semibold max-w-[75%] lg:max-w-[85%] line-clamp-2">
-                                      Polaroid Now Generation 2 i-Type Instant
-                                      Camera
-                                    </p>
-                                  </div>
-                                  <div className="flex flex-col items-end basis-[40%]">
-                                    <p className="flex gap-2">
-                                      <span className="font-sans text-h6 text-right text-black">
-                                        €129.99
-                                      </span>
-                                    </p>
-                                    <div className="flex mt-4 justify-end">
-                                      <button className="button bg-white text-black border-black hover:bg-black hover:text-white hover:border-black text-sm leading-none py-1 px-2 border font-sans rounded-full transition-[all] duration-300 ease-out border-solid disabled:cursor-default undefined">
-                                        Add to cart
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </Link>
-                          <Link
-                            href="/product"
-                            className="h-full z-1 relative text-left"
-                          >
-                            <div className="absolute top-10 z-10 left-4 lg:left-10">
-                              <div className="flex gap-2 transition-opacity ease-in-out duration-300 opacity-0 min-h- 7 h-7 mb-3 md:mb-4 pointer-events-none"></div>
-                            </div>
-                            <div className="flex flex-col items-center h-full">
-                              <div className="relative lg:p-4 mb-10 lg:mb-0 hover:lg:shadow-sm lg:w-[342px] lg:min-h-[412px] p-2 h-full cursor-pointer">
-                                <div className="group/card">
-                                  <div className="relative h-[297px] w-[297px] lg:h-[306px] lg:w-[306px] bg-[#e9e9e9]">
-                                    <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
-                                      <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
-                                        <div className="w-full h-full">
-                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
-                                            <Image src={product1} alt="" className="object-cover" />
-                                          </div>
-                                          
-                                        </div>
-                                      </div>
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="pt-4 md:pt-4 flex justify-between w-[297px] lg:w-[306px]">
-                                  <div className="flex-1">
-                                    <p className="text-sm text-black font-semibold max-w-[75%] lg:max-w-[85%] line-clamp-2">
-                                      Polaroid Now Generation 2 i-Type Instant
-                                      Camera
-                                    </p>
-                                  </div>
-                                  <div className="flex flex-col items-end basis-[40%]">
-                                    <p className="flex gap-2">
-                                      <span className="font-sans text-h6 text-right text-black">
-                                        €129.99
-                                      </span>
-                                    </p>
-                                    <div className="flex mt-4 justify-end">
-                                      <button className="button bg-white text-black border-black hover:bg-black hover:text-white hover:border-black text-sm leading-none py-1 px-2 border font-sans rounded-full transition-[all] duration-300 ease-out border-solid disabled:cursor-default undefined">
-                                        Add to cart
-                                      </button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </Link>
+                            )
+                          })}
+                          
+                        
                         </div>
                       </div>
                     </div>
