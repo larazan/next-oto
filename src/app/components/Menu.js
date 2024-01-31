@@ -207,13 +207,13 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
                 </Link>
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
-                  href="/collection"
+                  href="/shop"
                 >
                   Accessories
                 </Link>
                 <Link
                   className="flex items-center h-8 text-xs font-semibold text-gray-900 "
-                  href="/collection"
+                  href="/shop"
                 >
                   Gifts
                 </Link>
@@ -231,7 +231,7 @@ const Menu = ({ openMenu, clickMenu, setOpenMenu }) => {
           </div>
           <div className={` py-0 flex flex-col w-full `}>
             <Link
-              href={"/blogs"}
+              href={"/reviews"}
               className="flex items-center justify-between h-10 px-3 text-gray-900 text-xs md:text-[18px] font-semibold md:font-bold"
             >
               <span className="text-sm uppercase">Reviews</span>

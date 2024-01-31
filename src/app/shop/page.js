@@ -90,7 +90,7 @@ export default function page() {
                                     <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
                                       <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
                                         <div className="w-full h-full">
-                                          <div className="hidden md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
                                             <Image src={product1} alt="" className="object-cover" />
                                           </div>
                                           
@@ -137,7 +137,7 @@ export default function page() {
                                     <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
                                       <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
                                         <div className="w-full h-full">
-                                          <div className="hidden md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
                                             <Image src={product1} alt="" className="object-cover" />
                                           </div>
                                           
@@ -184,7 +184,7 @@ export default function page() {
                                     <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
                                       <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
                                         <div className="w-full h-full">
-                                          <div className="hidden md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
                                             <Image src={product1} alt="" className="object-cover" />
                                           </div>
                                           
@@ -231,7 +231,7 @@ export default function page() {
                                     <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
                                       <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
                                         <div className="w-full h-full">
-                                          <div className="hidden md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
                                             <Image src={product1} alt="" className="object-cover" />
                                           </div>
                                           
@@ -278,7 +278,7 @@ export default function page() {
                                     <div className="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2">
                                       <div className="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity duration-500 opacity-100 group-hover/card:lg:opacity-0">
                                         <div className="w-full h-full">
-                                          <div className="hidden md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                                          <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
                                             <Image src={product1} alt="" className="object-cover" />
                                           </div>
                                           
@@ -325,8 +325,6 @@ export default function page() {
       </div>
 
       <ProductShop />
-
-
 
       <SubscribeForm />
       <Footer />
