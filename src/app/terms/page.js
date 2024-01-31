@@ -92,9 +92,9 @@ export default function Terms() {
                 <li>
                   <a
                     className=" text-gray-800  text-base lg:text-lg hover:text-[#32917b]"
-                    href="/pages/email-sign-up-discount-terms-conditions"
+                    href="/pages/email-sign-up-disc ml-6ount-terms-conditions"
                   >
-                    Email Sign Up Discount
+                    Email Sign Up disc ml-6ount
                   </a>
                 </li>
                 <li>
@@ -136,7 +136,7 @@ export default function Terms() {
                 Privacy policy
               </h1>
               <div className="prose prose-h2:mt-0">
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Rise Gardens Privacy Policy</b>
                 </p>
                 <p className="text-gray-900">
@@ -151,13 +151,13 @@ export default function Terms() {
                     available to you with respect to our handling of your data.
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>&nbsp;</b>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Information We Collect</b>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Information we collect directly from you</b>
                 </p>
                 <p className="text-gray-900">
@@ -168,7 +168,7 @@ export default function Terms() {
                     personal data we may collect directly from you include:
                   </span>
                 </p>
-                <ul>
+                <ul className="text-gray-900 list-disc ml-6">
                   <li>
                     <span style={{ fontWeight: 400 }}></span>
                     <span style={{ fontWeight: 400 }}>
@@ -204,7 +204,7 @@ export default function Terms() {
                     </span>
                   </li>
                 </ul>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Information about your use of our Services</b>
                 </p>
                 <p className="text-gray-900">
@@ -214,7 +214,7 @@ export default function Terms() {
                   </span>
                 </p>
 
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Information we collect from other sources</b>
                 </p>
                 <p className="text-gray-900">
@@ -230,7 +230,7 @@ export default function Terms() {
                     that refer you to Rise Gardens.
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Information we collect by automated means</b>
                 </p>
                 <p className="text-gray-900">
@@ -249,7 +249,7 @@ export default function Terms() {
                     visitors to our websites;
                   </span>
                 </p>
-                <ul>
+                <ul className="text-gray-900 list-disc ml-6">
                   <li>
                     <span style={{ fontWeight: 400 }}></span>
                     <span style={{ fontWeight: 400 }}>
@@ -317,7 +317,7 @@ export default function Terms() {
                   </a>
                   <span style={{ fontWeight: 400 }}>.</span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>How We Use Your Information</b>
                 </p>
                 <p className="text-gray-900">
@@ -329,7 +329,7 @@ export default function Terms() {
                     to:
                   </span>
                 </p>
-                <ul>
+                <ul className="text-gray-900 list-disc ml-6">
                   <li>
                     <span style={{ fontWeight: 400 }}></span>
                     <span style={{ fontWeight: 400 }}>
@@ -374,7 +374,7 @@ export default function Terms() {
                   </li>
                 </ul>
                 <p className="text-gray-900">&nbsp;</p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>How We Share Your Information</b>
                 </p>
                 <p className="text-gray-900">
@@ -382,7 +382,7 @@ export default function Terms() {
                     We may share the information we collect:
                   </span>
                 </p>
-                <ul>
+                <ul className="text-gray-900 list-disc ml-6">
                   <li>
                     <span style={{ fontWeight: 400 }}></span>
                     <span style={{ fontWeight: 400 }}>
@@ -453,10 +453,10 @@ export default function Terms() {
                     <span style={{ fontWeight: 400 }}>@risegardens.com</span>
                   </a>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Your Rights and Choices</b>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Managing or deleting your Rise Gardens account</b>
                 </p>
                 <p className="text-gray-900">
@@ -473,7 +473,7 @@ export default function Terms() {
                     <span style={{ fontWeight: 400 }}>@risegardens.com</span>
                   </a>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Opting out of email marketing</b>
                 </p>
                 <p className="text-gray-900">
@@ -486,7 +486,7 @@ export default function Terms() {
                     legal terms).
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Restricting cookies</b>
                 </p>
                 <p className="text-gray-900">
@@ -498,7 +498,7 @@ export default function Terms() {
                     functionality of our websites.
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Children</b>
                 </p>
                 <p className="text-gray-900">
@@ -519,7 +519,7 @@ export default function Terms() {
                     databases.
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Data Transfers and Privacy Shield</b>
                 </p>
                 <p className="text-gray-900">
@@ -542,7 +542,7 @@ export default function Terms() {
                     Federal Trade Commission.
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Links to Other Websites and Third-Party Content</b>
                 </p>
                 <p className="text-gray-900">
@@ -566,7 +566,7 @@ export default function Terms() {
                     third-party service that provides the feature.
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Data Retention</b>
                 </p>
                 <p className="text-gray-900">
@@ -581,7 +581,7 @@ export default function Terms() {
                     expired.
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Changes to Our Privacy Policy</b>
                 </p>
                 <p className="text-gray-900">
@@ -595,7 +595,7 @@ export default function Terms() {
                     practices.
                   </span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>California Privacy Rights</b>
                 </p>
                 <p className="text-gray-900">
@@ -617,7 +617,7 @@ export default function Terms() {
                   </a>
                   <span style={{ fontWeight: 400 }}>.</span>
                 </p>
-                <p className="text-gray-900">
+                <p className="pt-4 pb-2 text-gray-900">
                   <b>Contacting Rise Gardens</b>
                 </p>
                 <p className="text-gray-900">
@@ -664,7 +664,7 @@ export default function Terms() {
                   <br />
                 </p>
                 <p className="text-gray-900">&nbsp;</p>
-                <p dir="ltr">
+                <p className='text-gray-900' dir="ltr">
                   <em>
                     Our website uses cookies to keep track of items you put into
                     your shopping cart, including when you have abandoned your

@@ -215,9 +215,9 @@ export default function Search() {
                     <div className="flex w-full py-6 lg:py-9">
                       <div className="w-full">
                         <div>
-                          <a
+                          <Link
                             className="z-[1]"
-                            href="/blog/capture-real-life-by-edie-sunday"
+                            href="/blogs/capture-real-life-by-edie-sunday"
                           >
                             <div className="w-full max-w-full lg:h-[108px] mb-[25px]">
                               <div className="relative grid grid-cols-[108px_1fr] gap-x-[16px] lg:gap-x-[36px] z-[10] hover:z-20 cursor-pointer">
@@ -264,7 +264,7 @@ export default function Search() {
                                 </div>
                               </div>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -286,7 +286,7 @@ export default function Search() {
                             className="flex items-center justify-between w-full"
                             data-radix-collection-item=""
                           >
-                            <span className="text-h6-mobile leading-6 lg:text-[20px] lg:leading-10 font-sans text-left lg:text-center">
+                            <span className="text-h6-mobile leading-6 lg:text-[20px] lg:leading-10 font-sans text-left lg:text-center text-black">
                               {" "}
                               Something else?
                             </span>

@@ -144,13 +144,13 @@ const ProductShop = () => {
           <div className=" pb-16 mt-7 md:mt-[72px] ">
             <div className="mt-12 md:mt-[72px] flex flex-col">
               <div className="mb-4 md:mb-9">
-                <h3 className="text-2xl md:text-3xl font-bold">
+                <h3 className="text-2xl md:text-3xl font-bold text-black">
                   Polaroid Now Generation 2 Cameras
                 </h3>
               </div>
               <div className="flex flex-col md:flex-row w-full">
                 <div className="w-full md:w-3/12 ">
-                  <div className="flex flex-col text-md leading-5 md:text-lg md:leading-6 font-semibold custom-rich-text mb-7 md:mb-8">
+                  <div className="flex flex-col text-md leading-5 md:text-lg text-black md:leading-6 font-semibold custom-rich-text mb-7 md:mb-8">
                     <div>
                       <div>
                         <p className="font-sans">
@@ -162,12 +162,12 @@ const ProductShop = () => {
                     </div>
                   </div>
                   <div>
-                    <a
-                      href="/collections/now-camera"
-                      className="font-semibold animated-underline after:bg-[#fff] before:bg-[#000]"
+                    <Link
+                      href="/collections"
+                      className="font-semibold animated-underline after:bg-[#fff] before:bg-[#000] text-black"
                     >
                       See all
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
