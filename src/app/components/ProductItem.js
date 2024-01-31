@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import product1 from "@/assets/gallery/gallery2.png";
+import wheel from "@/assets/products/wheel.png";
 
 const ProductItem = () => {
   const [count, setCount] = useState(0);
@@ -20,10 +21,10 @@ const ProductItem = () => {
       <div className="flex gap-x-4 py-2 lg:px-6 border-b border-gray-200 w-full font-light text-gray-500">
         <div className="w-full min-h-[110px] flex items-center gap-x-2">
           <Link
-            href={"/shop/product-4"}
+            href={"/product"}
             className="border rounded-sm bg-gray-100 p-1"
           >
-            <Image src={product1} alt="" className="max-w-[80px]" />
+            <Image src={wheel} alt="" className="max-w-[80px]" />
           </Link>
           <div className="w-full flex flex-col">
             <div className="flex justify-between mb-2">
@@ -32,10 +33,10 @@ const ProductItem = () => {
                 
                 </span> */}
                 <Link
-                  href={"/shop/product-4"}
+                  href={"/product"}
                   className="text-sm font-medium leading-tight hover:underline underline-offset-1"
                 >
-                  Rescue Balm Red Correct
+                  GAMMA 20x10 SATIN BLK
                 </Link>
               </div>
 

@@ -37,7 +37,7 @@ const Breadcrumb = () => {
                     className="whitespace-nowrap text-xs hover:underline uppercase text-gray-900"
                     href="/en/shop/rare-plnts"
                   >
-                    Screencare
+                    Spareparts
                   </a>
                 </li>
                 <li className='before:inline before:px-1.5 before:text-sm before:content-["/"] text-gray-900'>

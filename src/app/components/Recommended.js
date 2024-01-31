@@ -190,8 +190,8 @@ const Recommended = () => {
               ref={scrl}
               onScroll={scrollCheck}
             >
-              {productData.map((data, index) => {
-                return (
+              {productData.map((data, index) => 
+                 (
                   <div
                     className="relative overflow-hidden md:transform md:transition-all cursor-pointer w-[200px] shrink-0 grow-0 snap-start lg:w-[197px] mr-3"
                     key={index}
@@ -282,8 +282,8 @@ const Recommended = () => {
                   //       </div>
                   //     </div>
                   //   </div>
-                );
-              })}
+                )
+              )}
             </div>
           </div>
         </div>

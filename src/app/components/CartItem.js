@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import product1 from "@/assets/gallery/gallery2.png";
+import wheel from "@/assets/products/wheel.png";
 
 const CartItem = () => {
   const [count, setCount] = useState(0);
@@ -21,7 +22,7 @@ const CartItem = () => {
     <div className="flex py-5 gap-3 md:gap-5 border-b">
       {/* IMAGE START */}
       <div className="shrink-0 aspect-square w-[70px] md:w-[120px] md:bg-grayish p-1 bg-grayish">
-        <Image src={product1} alt="" width={120} height={120} />
+        <Image src={wheel} alt="" width={120} height={120} />
       </div>
       {/* IMAGE END */}
 
@@ -29,10 +30,10 @@ const CartItem = () => {
         <div className="flex flex-col md:flex-row justify-between">
           {/* PRODUCT TITLE */}
           <Link
-            href="/shop/product-3"
+            href="/product"
             className="text-base leading-tight hover:underline font-semibold text-black/[0.8]"
           >
-            Deep Scrub
+            GAMMA 20x10 SATIN BLK
           </Link>
 
           {/* PRODUCT SUBTITLE */}

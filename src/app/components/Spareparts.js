@@ -131,8 +131,8 @@ const Spareparts = () => {
                             <div className=' bg-transparent'>
                                 <Image src={data.img} alt='' className='object-cover' />
                             </div>
-                            <div>
-                                <span className='text-sm font-semibold capitalize text-black'>{data.title}</span>
+                            <div className='text-center'>
+                                <span className='text-sm font-semibold capitalize text-black leading-tight'>{data.title}</span>
                             </div>
                         </div>
                     

@@ -51,7 +51,7 @@ const SpecSide = ({ isOpen, handleClose, setIsOpen }) => {
           
         </div>
         <div className="h-full w-full z-40 px-7">
-          <h3 className="font-bold text-[24px] leading-7 md:text-[28px] md:leading-8">
+          <h3 className="font-bold text-[24px] leading-7 md:text-[28px] md:leading-8 text-black">
             Technical Specifications
           </h3>
           <ul className="pb-[64px] lg:pb-[108px]">

@@ -95,8 +95,8 @@ const ReviewList = () => {
             <div className="w-full overflow-x-auto overflow-hidden">
               <div className="min-w-full table">
                 <div className="flex pb-5 lg:pb-4 lg:mx-0">
-                  {reviewData.map((data, index) => {
-                    return (
+                  {reviewData.map((data, index) => 
+                     (
                       <div className="z-[1]" key={index}>
                         <div className="flex flex-col min-w-[85%] w-full lg:min-w-[10%] lg:max-w-[384px]">
                           <div
@@ -208,8 +208,8 @@ const ReviewList = () => {
                           </div>
                         </div>
                       </div>
-                    );
-                  })}
+                    )
+                  )}
                 </div>
               </div>
             </div>

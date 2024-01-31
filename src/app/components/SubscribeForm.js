@@ -34,7 +34,7 @@ import React from 'react'
                       <svg
                         aria-hidden="true"
                         focusable="false"
-                        class="icon icon-facebook w-5 h-5"
+                        className="icon icon-facebook w-5 h-5"
                         viewBox="0 0 320 512"
                       >
                         <path
@@ -47,7 +47,7 @@ import React from 'react'
                       <svg
                         aria-hidden="true"
                         focusable="false"
-                        class="icon icon-instagram w-5 h-5"
+                        className="icon icon-instagram w-5 h-5"
                         viewBox="0 0 448 512"
                       >
                         <path
@@ -60,7 +60,7 @@ import React from 'react'
                       <svg
                         aria-hidden="true"
                         focusable="false"
-                        class="icon icon-tiktok w-5 h-5"
+                        className="icon icon-tiktok w-5 h-5"
                         viewBox="0 0 448 512"
                       >
                         <path
@@ -72,7 +72,7 @@ import React from 'react'
                     <div className="flex items-center rounded-full p-2 transition duration-500 ease-in-out text-gray-900 hover:text-white hover:scale-1052 hover:bg-gray-900 cursor-pointer">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-twitter-filled"
+                        className="icon icon-tabler icon-tabler-brand-twitter-filled"
                         width="20"
                         height="20"
                         viewBox="0 0 24 24"

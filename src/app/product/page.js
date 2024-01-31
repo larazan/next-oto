@@ -36,7 +36,7 @@ export default function page() {
       <NewsFeed />
       <Breadcrumb />
       <div className="flex flex-col md:flex-row justify-between max-w-full h-auto pb-10 bg-white">
-        <div className="hidden w-screen h-[415px] max-w-full md:min-w-[55%] md:h-[546px] md:sticky md:top-0 z-[9]">
+        <div className=" w-screen h-[415px] max-w-full md:min-w-[55%] md:h-[546px] md:sticky md:top-0 z-[9]">
           <div className="flex flex-col w-full h-full bg-[#e9e9e9]">
             <div className="keen-slider h-full">
               <div className="absolute z-30 hidden top-4 lg:top-5 left-5 lg:left-[60px] font-sans text-body-detail lg:text-h6">
@@ -60,8 +60,8 @@ export default function page() {
                   See Polaroid Now+ Cameras
                 </a>
               </div>
-              <div className="h-[375px] min-w-full md:h-full bg-[#e9e9e9] cursor-grab flex justify-center items-center">
-                <div className="h-full w-full sm:max-w-[375px] md:max-w-[80%] p-6 lg:p-10">
+              <div className="h-[300px] md:h-[375px] min-w-full md:h-full bg-[#e9e9e9] cursor-grab flex justify-center items-center">
+                <div className="h-full w-full sm:max-w-[375px] max-w-[80%] p-6 lg:p-10">
                   <div className="w-full h-full">
                     <div className="w-full h-full relative animate-[fadeIn_0.3s_ease-out]">
                       <Image src={product1} alt="" className="object-cover" />
@@ -70,10 +70,10 @@ export default function page() {
                 </div>
               </div>
             </div>
-            <div className="flex md:justify-start md:relative md:border-t-[2px] md:border-white md:border-solid bg-[#e9e9e9]">
+            <div className="flex md:justify-start md:relative border-t-[2px] border-white md:border-solid bg-[#e9e9e9]">
               <button
                 type="button"
-                className="h-[108px] w-[72px] flex justify-center items-center bg-[#e9e9e9] border-solid border-r-[2px] border-white"
+                className="h-[108px] w-[50px] md:w-[72px] flex justify-center items-center bg-[#e9e9e9] border-solid border-r-[2px] border-white text-black"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ export default function page() {
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-5 h-5 md:w-6 md:h-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -90,31 +90,31 @@ export default function page() {
                   />
                 </svg>
               </button>
-              <div className="md:flex md:justify-start md:relative overflow-hidden">
+              <div className="flex md:flex md:justify-start md:relative overflow-hidden">
                 <div className="bg-[#e9e9e9] min-w-[108px] transition p-4 relative mr-[2px] border-solid border-r-[2px] border-white">
                   <div className="flex items-center justify-center w-16 h-full">
-                    <div className="w-full h-full md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                    <div className="flex w-full h-full md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out] transition ease-out duration-300">
                       <Image src={product1} alt="" className="object-cover" />
                     </div>
                   </div>
                 </div>
                 <div className="bg-[#e9e9e9] min-w-[108px] transition p-4 relative mr-[2px] border-solid border-r-[2px] border-white">
                   <div className="flex items-center justify-center w-16 h-full">
-                    <div className="w-full h-full md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                    <div className="flex w-full h-full md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out] transition ease-out duration-300">
                       <Image src={product2} alt="" className="object-cover" />
                     </div>
                   </div>
                 </div>
-                <div className="bg-[#e9e9e9] min-w-[108px] transition p-4 relative mr-[2px] border-solid border-r-[2px] border-white">
+                <div className=" bg-[#e9e9e9] min-w-[108px] transition p-4 relative mr-[2px] border-solid border-r-[2px] border-white">
                   <div className="flex items-center justify-center w-16 h-full">
-                    <div className="w-full h-full md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                    <div className="flex w-full h-full md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out] transition ease-out duration-300">
                       <Image src={product3} alt="" className="object-cover" />
                     </div>
                   </div>
                 </div>
                 <div className="bg-[#e9e9e9] min-w-[108px] transition p-4 relative mr-[2px] border-solid border-r-[2px] border-white">
                   <div className="flex items-center justify-center w-16 h-full">
-                    <div className="w-full h-full md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+                    <div className="flex w-full h-full md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out] transition ease-out duration-300">
                       <Image src={product4} alt="" className="object-cover" />
                     </div>
                   </div>
@@ -122,7 +122,7 @@ export default function page() {
               </div>
               <button
                 type="button"
-                className="h-[108px] w-[72px] flex justify-center items-center bg-[#e9e9e9] ml-auto border-solid border-l-[2px] border-white"
+                className="h-[108px] w-[50px] md:w-[72px] flex justify-center items-center bg-[#e9e9e9] ml-auto border-solid border-l-[2px] border-white text-black"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +130,7 @@ export default function page() {
                   viewBox="0 0 24 24"
                   strokeWidth={2}
                   stroke="currentColor"
-                  className="w-6 h-6"
+                  className="w-5 h-5 md:w-6 md:h-6"
                 >
                   <path
                     strokeLinecap="round"
@@ -154,7 +154,7 @@ export default function page() {
                   + Free Round Strap
                 </div>
               </div>
-              <h1 className="font-bold text-2xl leading-8 md:text-4xl md:leading-[42px]">
+              <h1 className="font-bold text-2xl leading-8 md:text-4xl md:leading-[42px] text-black">
                 Polaroid Now+ Generation 2 Starter Set
               </h1>
               <div className="flex items-center mt-1.5 md:mt-3">
@@ -164,11 +164,11 @@ export default function page() {
                   data-label="reviewStars"
                 >
                   <svg
-                    className=""
+                    className="text-gray-900"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
-                    fill="currentColor"
+                    fill="#000000"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M8 12.87L3.153 15.418L4.079 10.021L0.157 6.198L5.577 5.411L8 0.5L10.424 5.411L15.844 6.198L11.922 10.021L12.848 15.418L8 12.87Z"></path>
@@ -187,11 +187,11 @@ export default function page() {
                     </defs>
                   </svg>
                   <svg
-                    className=""
+                    className="text-gray-900"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
-                    fill="currentColor"
+                    fill="#000000"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M8 12.87L3.153 15.418L4.079 10.021L0.157 6.198L5.577 5.411L8 0.5L10.424 5.411L15.844 6.198L11.922 10.021L12.848 15.418L8 12.87Z"></path>
@@ -210,11 +210,11 @@ export default function page() {
                     </defs>
                   </svg>
                   <svg
-                    className=""
+                    className="text-gray-900"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
-                    fill="currentColor"
+                    fill="#000000"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M8 12.87L3.153 15.418L4.079 10.021L0.157 6.198L5.577 5.411L8 0.5L10.424 5.411L15.844 6.198L11.922 10.021L12.848 15.418L8 12.87Z"></path>
@@ -233,11 +233,11 @@ export default function page() {
                     </defs>
                   </svg>
                   <svg
-                    className=""
+                    className="text-gray-900"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
-                    fill="currentColor"
+                    fill="#000000"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path d="M8 12.87L3.153 15.418L4.079 10.021L0.157 6.198L5.577 5.411L8 0.5L10.424 5.411L15.844 6.198L11.922 10.021L12.848 15.418L8 12.87Z"></path>
@@ -269,7 +269,7 @@ export default function page() {
                     ></path>
                   </svg>
 
-                  <span className="inline-block ml-1 font-semibold text-xs">
+                  <span className="inline-block ml-1 font-semibold text-xs text-gray-900">
                     (100+)
                   </span>
                 </button>
@@ -287,7 +287,7 @@ export default function page() {
                       <span className="absolute rounded-full after:absolute after:left-[-3px] after:top-[-2px] after:w-[36px] after:h-[36px] after:border-2 after:border-gray-900 after:rounded-full after:z-[2]"></span>
                       <div
                         className="rounded-full mr-3 relative overflow-hidden w-[32px] h-[32px]"
-                        tabindex="0"
+                        tabIndex="0"
                         role="button"
                         style={{
                           background: "rgb(255, 255, 255)",
