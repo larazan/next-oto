@@ -233,7 +233,7 @@ const ScheduleRace = () => {
 
   return (
     <>
-      <div className="flex w-full py-0 border-y px-0 bg-[#f1f2f3]">
+      <div className="hidden md:flex w-full py-0 border-y px-0 bg-[#f1f2f3]">
         <div className="flex flex-row  w-full">
           <div className="flex w-3/12 divide-x divide-gray-300">
             <div className="flex w-1/2 px-2 justify-center items-center">

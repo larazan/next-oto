@@ -3,7 +3,7 @@ import React from 'react'
 const Breadcrumb = () => {
   return (
     <>
-      <section className="py-2 md:bg-white md:py-4 md:text-sm">
+      <section className="py-2 bg-white md:py-4 md:text-sm">
         <div className="grid-container px-3 lg:px-0">
           <nav aria-label="breadcrumbs">
             <div className="relative w-full">

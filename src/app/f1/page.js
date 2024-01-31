@@ -112,8 +112,8 @@ export default function F1() {
             <div className="grid grid-cols-2 gap-2">
               {newsData.map((data, index) => {
                 return (
-                  <div className='flex before:inline items-center before:px-1.5 before:text-sm before:content-[">"] ' key={index}>
-                    <Link href={"/"} className="text-gray-900 hover:text-blue-600">
+                  <div className='flex before:inline items-center before:px-1.5 before:text-sm before:content-[">"] text-black' key={index}>
+                    <Link href={"/"} className="text-gray-900 hover:text-blue-600 leading-4">
                     <span className="text-xs ">{data.title}</span>
                     </Link>
                   </div>
@@ -125,7 +125,7 @@ export default function F1() {
       </main>
 
       <div className="h-max mx-auto w-full lg:w-1/2 flex flex-col space-y-4 md:px-4 py-5 md:py-4 lg:px-0 justify-center2 items-center2 bg-white">
-        <div className="flex flex-row flex-wrap  mx-auto w-full md:w-12/12 ">
+        <div className="flex flex-row flex-wrap items-center mx-auto w-full md:w-12/12 ">
           {newsData.map((data, index) => {
             return (
               <div className="px-3 py-3 w-1/2 md:w-1/3 lg:w-1/3" key={index}>

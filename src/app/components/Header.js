@@ -35,7 +35,7 @@ const Header = () => {
         <div className="flex w-full md:w-1/5 justify-between ">
           <div className="flex justify-between w-full md:w-[100px]">
             <div className="w-2/6">
-              <button className=" h-8 w-8 md:hidden2" onClick={clickMenu}>
+              <button className=" h-8 w-8 md:hidden2 text-black" onClick={clickMenu}>
                 <svg
                   class="w-6 h-6"
                   fill="none"
@@ -59,27 +59,10 @@ const Header = () => {
               </Link>
             </div>
             <div className="w-2/6 flex justify-end space-x-2 md:hidden">
-              <div
-                id="search-toggle"
+              <Link
+                href={"/search"}
                 className="flex items-center cursor-pointer"
-                onClick={handleClick}
               >
-                {show ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-[#1d494e]"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                ) : (
                   <svg
                     className="fill-current text-gray-700 w-5 h-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -90,8 +73,7 @@ const Header = () => {
                       d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
                     />
                   </svg>
-                )}
-              </div>
+              </Link>
               <button
                 className="relative flex items-center w-8 h-8 "
                 onClick={() => setIsOpen(!isOpen)}

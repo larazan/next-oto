@@ -7,12 +7,11 @@ const HeroSection = () => {
   return (
     <>
       <div
-        data-section="hero-sectionIndex=0"
         className="relative w-full flex flex-col justify-center md:h-[480px] mx-auto h-[193px] xs:items-center xs:justify-center md:items-start md:justify-center text-white"
       >
         <div className="absolute w-full h-full">
           <div className="w-full h-full">
-            <div className="hidden md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+            <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
               <Image src={product} alt="" className="object-cover h-full" />
             </div>
           </div>

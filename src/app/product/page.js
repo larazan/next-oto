@@ -33,10 +33,10 @@ export default function page() {
 
       <Header />
       <GoTop />
-<NewsFeed />
-<Breadcrumb />
+      <NewsFeed />
+      <Breadcrumb />
       <div className="flex flex-col md:flex-row justify-between max-w-full h-auto pb-10 bg-white">
-        <div className="w-screen h-[415px] max-w-full md:min-w-[55%] md:h-[546px] md:sticky md:top-0 z-[9]">
+        <div className="hidden w-screen h-[415px] max-w-full md:min-w-[55%] md:h-[546px] md:sticky md:top-0 z-[9]">
           <div className="flex flex-col w-full h-full bg-[#e9e9e9]">
             <div className="keen-slider h-full">
               <div className="absolute z-30 hidden top-4 lg:top-5 left-5 lg:left-[60px] font-sans text-body-detail lg:text-h6">
@@ -144,23 +144,8 @@ export default function page() {
         </div>
 
         <div className="w-screen max-w-full md:min-w-[45%] h-auto px-3 md:px-8">
-          <div className="mt-9 md:mt-7 md:pb-8">
-            <div
-              itemprop="offers"
-              itemtype="https://schema.org/Offer"
-              itemscope=""
-            >
-              <meta itemprop="price" content="174.99" />
-              <meta itemprop="priceValidUntil" content="2025/01/23" />
-              <meta
-                itemprop="itemCondition"
-                content="https://schema.org/NewCondition"
-              />
-              <meta itemprop="priceCurrency" content="EUR" />
-              <meta
-                itemprop="availability"
-                content="https://schema.org/InStock"
-              />
+          <div className="mt-6 md:mt-6 md:pb-8">
+            <div>
               <div className="flex gap-2 transition-opacity ease-in-out duration-300 opacity-100">
                 <div
                   className="mb-3 md:mb-4 px-4 py-2 rounded-full text-white font-sans font-normal text-body-detail w-fit"
@@ -295,11 +280,11 @@ export default function page() {
             </div>
             <div className="mt-7 md:mt-8">
               <div className="flex flex-col font-semibold">
-                <p className="text-lg md:text-h5">Color: Black &amp; White</p>
-                <ul className="flex pl-[5px] py-2 mt-[14px] md:mt-[18px] overflow-x-auto ">
-                  <li data-label="in-stock" className="relative">
-                    <div className="relative w-full h-full">
-                      <span className="rounded-full mr-3 overflow-hidden w-[32px] h-[32px] after:absolute after:left-[-3px] after:top-[21px] after:w-[38px] after:h-[38px] after:border-2 after:border-gray-900 after:rounded-full after:z-[2]"></span>
+                <p className="text-lg md:text-h5 text-black">Color: Black &amp; White</p>
+                <ul className="flex pl-[5px] py-2 items-center overflow-x-auto">
+                  <li data-label="in-stock" className="relative flex justify-start items-start">
+                    <div className="relative flex w-full h-full ">
+                      <span className="absolute rounded-full after:absolute after:left-[-3px] after:top-[-2px] after:w-[36px] after:h-[36px] after:border-2 after:border-gray-900 after:rounded-full after:z-[2]"></span>
                       <div
                         className="rounded-full mr-3 relative overflow-hidden w-[32px] h-[32px]"
                         tabindex="0"
@@ -318,9 +303,9 @@ export default function page() {
                       </div>
                     </div>
                   </li>
-                  <li data-label="in-stock" className="relative">
-                    <div className="relative w-full h-full">
-                      <span className="rounded-full mr-3 overflow-hidden w-[32px] h-[32px]"></span>
+                  <li data-label="in-stock" className="relative flex">
+                    <div className="relative flex w-full h-full">
+                      {/* <span className="rounded-full mr-3 overflow-hidden w-[32px] h-[32px]"></span> */}
                       <div
                         className="rounded-full mr-3 relative overflow-hidden w-[32px] h-[32px]"
                         tabindex="0"
@@ -331,17 +316,13 @@ export default function page() {
                           boxSizing: "border-box",
                         }}
                       >
-                        <span className="hidden">Black &amp; White</span>
-                        <span
-                          className="absolute w-[20px] h-[35px] left-1 translate-x-[50%]"
-                          style={{ background: "transparent" }}
-                        ></span>
+                        
                       </div>
                     </div>
                   </li>
                   <li data-label="in-stock" className="relative">
-                    <div className="relative w-full h-full">
-                      <span className="rounded-full mr-3 overflow-hidden w-[32px] h-[32px]"></span>
+                    <div className="relative flex w-full h-full">
+                      {/* <span className="rounded-full mr-3 overflow-hidden w-[32px] h-[32px]"></span> */}
                       <div
                         className="rounded-full mr-3 relative overflow-hidden w-[32px] h-[32px]"
                         tabindex="0"
@@ -352,17 +333,14 @@ export default function page() {
                           boxSizing: "border-box",
                         }}
                       >
-                        <span className="hidden">Black &amp; White</span>
-                        <span
-                          className="absolute w-[20px] h-[35px] left-1 translate-x-[50%]"
-                          style={{ background: "transparent" }}
-                        ></span>
+                        
+                        
                       </div>
                     </div>
                   </li>
                   <li data-label="in-stock" className="relative">
-                    <div className="relative w-full h-full">
-                      <span className="rounded-full mr-3 overflow-hidden w-[32px] h-[32px]"></span>
+                    <div className="relative flex w-full h-full">
+                      {/* <span className="rounded-full mr-3 overflow-hidden w-[32px] h-[32px]"></span> */}
                       <div
                         className="rounded-full mr-3 relative overflow-hidden w-[32px] h-[32px]"
                         tabindex="0"
@@ -373,11 +351,7 @@ export default function page() {
                           boxSizing: "border-box",
                         }}
                       >
-                        <span className="hidden">Black &amp; White</span>
-                        <span
-                          className="absolute w-[20px] h-[35px] left-1 translate-x-[50%]"
-                          style={{ background: "transparent" }}
-                        ></span>
+                       
                       </div>
                     </div>
                   </li>
@@ -385,8 +359,8 @@ export default function page() {
               </div>
             </div>
             <div className="font-semibold mt-7 md:mt-[30px]">
-              <p className="text-lg md:text-h5">Pick your model</p>
-              <ul className="flex mt-[12px] md:mt-4">
+              <p className="text-lg md:text-h5 text-black">Pick your model</p>
+              <ul className="flex mt-4 md:mt-4">
                 <li>
                   <div
                     className="rounded-full mr-3 border-solid border-[2px] border-[#000] bg-white text-black transition-colors ease-out duration-300 hover:bg-black hover:text-white hover:border-solid"
@@ -467,7 +441,7 @@ export default function page() {
                       />
                     </svg>
                   </div>
-                  <p className="font-sans text-h6 ml-3 leading-tight">
+                  <p className="font-sans text-h6 ml-3 leading-tight text-black">
                     Mobile connectivity to unlock more creative features through
                     Polaroid App
                   </p>
@@ -489,7 +463,7 @@ export default function page() {
                       />
                     </svg>
                   </div>
-                  <p className="font-sans text-h6 ml-3">
+                  <p className="font-sans text-h6 ml-3 text-black">
                     Classic look made of 40% recycled materials
                   </p>
                 </li>
@@ -510,7 +484,7 @@ export default function page() {
                       />
                     </svg>
                   </div>
-                  <p className="font-sans text-h6 ml-3">
+                  <p className="font-sans text-h6 ml-3 text-black">
                     Works with our iconic full size Polaroid film
                   </p>
                 </li>
@@ -531,7 +505,7 @@ export default function page() {
                       />
                     </svg>
                   </div>
-                  <p className="font-sans text-h6 ml-3">
+                  <p className="font-sans text-h6 ml-3 text-black">
                     Comes with 5 lens filters
                   </p>
                 </li>

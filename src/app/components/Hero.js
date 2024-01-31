@@ -17,7 +17,7 @@ const Hero = () => {
       >
         <div className="absolute w-full h-full">
           <div className="w-full h-full">
-            <div className="hidden md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
+            <div className="hidden2 md:block md:w-full md:h-full relative animate-[fadeIn_0.3s_ease-out]">
               <Image src={product} alt="" className="object-cover h-full" />
             </div>
           </div>

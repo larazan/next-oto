@@ -378,7 +378,7 @@ export default function Standing() {
                 <p className="uppercase font-semibold text-sm text-gray-900">
                   glossary
                 </p>
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   {glossary.map((data, index) => {
                     return (
                       <div key={index}>

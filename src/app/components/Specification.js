@@ -18,7 +18,7 @@ const Specification = () => {
             <Tab label="Description">
               <div>
                 <div>
-                  <p className="font-sans">
+                  <p className="font-sans text-black">
                     The app-connected Polaroid Now+ Generation 2 instant camera
                     gives you creative control through the Polaroid App:
                     Aperture priority, light painting, double exposure,
@@ -30,7 +30,7 @@ const Specification = () => {
                     instant film format.
                   </p>
                   <h6>
-                    <em className="italic">
+                    <em className="italic text-black">
                       Please note: While our new branding is out, you may
                       receive the i-Type Films with our former branding.
                     </em>
@@ -41,7 +41,7 @@ const Specification = () => {
             <Tab label="Specifications">
               <div>
                 <div>
-                  <ul class="list-disc list-outside mb-4 ml-4">
+                  <ul class="list-disc list-outside mb-4 ml-4 text-black">
                     <li class="py-2">Accurate, human-friendly flash system</li>
                     <li class="py-2">Double Exposure</li>
                     <li class="py-2">Self-timer</li>
@@ -56,7 +56,7 @@ const Specification = () => {
                       Works with Polaroid i-Type and 600 film
                     </li>
                   </ul>
-                  <p class="font-sans">View full specifications <span role="button" tabindex="0" class="underline" onClick={() => setIsOpen(!isOpen)}>here</span>.</p>
+                  <p class="font-sans text-black">View full specifications <span role="button" tabindex="0" class="underline" onClick={() => setIsOpen(!isOpen)}>here</span>.</p>
                 </div>
               </div>
             </Tab>

@@ -47,7 +47,7 @@ const SortYear = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={2}
                 stroke="currentColor"
-                className={`w-3 h-3 ${isOpen? 'rotate-180' : ''} `}
+                className={`w-3 h-3 ${isOpen? 'rotate-180' : ''} text-black`}
               >
                 <path
                   strokeLinecap="round"

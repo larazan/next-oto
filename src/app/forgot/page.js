@@ -20,66 +20,61 @@ export default function Forgot() {
           <div className="max-w-full xl:max-w-[1800px] mx-auto flex flex-col justify-center items-center">
             <div className="flex flex-col md:flex-row w-full space-y-3 md:divide-x-2 px-10 md:space-y-0 max-w-full">
               <div className="flex justify-center flex-col md:flex-row">
-                <div class="max-w-full w-full lg:max-w-[432px] lg:w-[432px]">
+                <div className="max-w-full w-full lg:max-w-[432px] lg:w-[432px]">
                   <div>
                     <div>
-                      <h2 class="text-lg md:text-4xl text-black font-bold">
+                      <h2 className="text-lg md:text-4xl text-black font-bold">
                         Reset password
                       </h2>
                     </div>
-                    <div class="mt-5 lg:mt-6">
-                      <p class="text-body-md lg:text-h5 text-black font-sans leading-5 lg:leading-7">
+                    <div className="mt-5 lg:mt-6">
+                      <p className="text-body-md lg:text-h5 text-black font-sans leading-5 lg:leading-7">
                         <div>
                           <div>
-                            <p class="font-sans">
+                            <p className="font-sans text-black">
                               Please enter the email address you used to create
                               your account. If an account with this email
                               address exists we’ll send you an email to reset
                               your password. <br />
                               <br />
                               New to Polaroid? You can create an account{" "}
-                              <a
-                                target="_blank"
-                                rel="noreferrer"
-                                class="underline break-all md:break-normal"
-                              ></a>
-                              .<br />
+                             
                             </p>
-                            <p class="font-serifRegular">
-                              <em class="italic">
+                            <p className="pt-2 text-black">
+                              <em className="italic">
                                 If you haven’t received an email within 2 min,
                                 that means you don’t have an account and can
                                 create it{" "}
                               </em>
-                              <a
-                                href="https://www.polaroid.com/account/login"
+                              <Link
+                                href="/login"
                                 target="_blank"
                                 rel="noreferrer"
-                                class="underline break-all md:break-normal"
+                                className="underline break-all md:break-normal"
                               >
                                 here
-                              </a>
-                              <em class="italic">.</em>
+                              </Link>
+                              <em className="italic">.</em>
                             </p>
                           </div>
                         </div>
                       </p>
                     </div>
-                    <div class="pt-5 lg:pt-7">
+                    <div className="pt-5 lg:pt-7">
                       <form>
-                        <div class="mt-4 lg:mt-5">
-                          <div class="pl-4">
+                        <div className="mt-4 lg:mt-5">
+                          <div className="pl-4">
                             <label
-                              class="text-h6-mobile text-storm font-sans"
+                              className="text-h6-mobile text-storm font-sans text-black"
                               for="forgot-password-email"
                             >
                               Email
                             </label>
                           </div>
-                          <div class="mt-2">
+                          <div className="mt-2">
                             <input
                               id="forgot-password-email"
-                              class="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-body-md text-black font-sans leading-4 placeholder:text-dovegray"
+                              className="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-body-md text-black font-sans leading-4 placeholder:text-dovegray"
                               placeholder="Email"
                               type="email"
                               name="email"
@@ -87,21 +82,21 @@ export default function Forgot() {
                             />
                           </div>
                         </div>
-                        <div class="pt-4 lg:pt-5">
+                        <div className="pt-4 lg:pt-5">
                           <button
                             type="submit"
-                            class="text-md font-semibold rounded-full transition-[all] duration-300 ease-out cursor-pointer bg-black text-white border-2 border-black hover:bg-white hover:text-black hover:border-solid py-3 px-7 w-full"
+                            className="text-md font-semibold rounded-full transition-[all] duration-300 ease-out cursor-pointer bg-black text-white border-2 border-black hover:bg-white hover:text-black hover:border-solid py-3 px-7 w-full"
                           >
                             Submit
                           </button>
                         </div>
-                        <div class="flex justify-center pt-9">
-                          <a
-                            href="/account/login"
-                            class="text-md text-black font-semibold animated-underline animated-underline-black pb-[2px]"
+                        <div className="flex justify-center pt-9">
+                          <Link
+                            href="/login"
+                            className="text-md text-black font-semibold animated-underline animated-underline-black pb-[2px]"
                           >
                             Back to login
-                          </a>
+                          </Link>
                         </div>
                       </form>
                     </div>

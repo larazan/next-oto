@@ -32,7 +32,7 @@ export default function Detail() {
       <div className="flex flex-col bg-white min-h-screen ">
         <div className="flex flex-col space-y-1 py-2 md:py-4 mx-auto w-11/12">
           <BreadcrumbArticle />
-          <h1 className="text-4xl font-bold md:leading-9 ">
+          <h1 className="text-4xl font-bold md:leading-9 text-black">
           2024 Ford Mustang Mach-E GT Joins The Bronze Age
           </h1>
           <div className="flex flex-col space-y-1">
